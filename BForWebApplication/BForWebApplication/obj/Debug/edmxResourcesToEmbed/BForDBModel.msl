@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BForModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="BForModel.Car">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="PlateNo" ColumnName="PlateNo" />
+          <ScalarProperty Name="BrandModelID" ColumnName="BrandModelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComapyCars">
+      <EntityTypeMapping TypeName="BForModel.ComapyCar">
+        <MappingFragment StoreEntitySet="ComapyCars">
+          <ScalarProperty Name="CompanyCarPlatID" ColumnName="CompanyCarPlatID" />
+          <ScalarProperty Name="CarPlatNo" ColumnName="CarPlatNo" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="BForModel.Company">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyDrivers">
+      <EntityTypeMapping TypeName="BForModel.CompanyDriver">
+        <MappingFragment StoreEntitySet="CompanyDrivers">
+          <ScalarProperty Name="CompanyDriverID" ColumnName="CompanyDriverID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyPassengers">
+      <EntityTypeMapping TypeName="BForModel.CompanyPassenger">
+        <MappingFragment StoreEntitySet="CompanyPassengers">
+          <ScalarProperty Name="CompanyPassengerID" ColumnName="CompanyPassengerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DriverLicenses">
+      <EntityTypeMapping TypeName="BForModel.DriverLicens">
+        <MappingFragment StoreEntitySet="DriverLicenses">
+          <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+          <ScalarProperty Name="LicenseTypeID" ColumnName="LicenseTypeID" />
+          <ScalarProperty Name="LicenseTypeDetails" ColumnName="LicenseTypeDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drivers">
+      <EntityTypeMapping TypeName="BForModel.Driver">
+        <MappingFragment StoreEntitySet="Drivers">
+          <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="LicenseDetails" ColumnName="LicenseDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passengers">
+      <EntityTypeMapping TypeName="BForModel.Passenger">
+        <MappingFragment StoreEntitySet="Passengers">
+          <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Periods">
+      <EntityTypeMapping TypeName="BForModel.Period">
+        <MappingFragment StoreEntitySet="Periods">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="PeriodDescription" ColumnName="PeriodDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeriodTimes">
+      <EntityTypeMapping TypeName="BForModel.PeriodTime">
+        <MappingFragment StoreEntitySet="PeriodTimes">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="BForModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplyParts">
+      <EntityTypeMapping TypeName="BForModel.SupplyPart">
+        <MappingFragment StoreEntitySet="SupplyParts">
+          <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="FixingCost" ColumnName="FixingCost" />
+          <ScalarProperty Name="FixingDays" ColumnName="FixingDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_CarBrands">
+      <EntityTypeMapping TypeName="BForModel.t_CarBrands">
+        <MappingFragment StoreEntitySet="t_CarBrands">
+          <ScalarProperty Name="CarBrandID" ColumnName="CarBrandID" />
+          <ScalarProperty Name="CarManufacturer" ColumnName="CarManufacturer" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="CarTypeID" ColumnName="CarTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_CarType">
+      <EntityTypeMapping TypeName="BForModel.t_CarType">
+        <MappingFragment StoreEntitySet="t_CarType">
+          <ScalarProperty Name="CarTypeID" ColumnName="CarTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PassengersCapacity" ColumnName="PassengersCapacity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_LicenseType">
+      <EntityTypeMapping TypeName="BForModel.t_LicenseType">
+        <MappingFragment StoreEntitySet="t_LicenseType">
+          <ScalarProperty Name="LincenseTypeID" ColumnName="LincenseTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_Locations">
+      <EntityTypeMapping TypeName="BForModel.t_Locations">
+        <MappingFragment StoreEntitySet="t_Locations">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="LocationGpsNDecimalCrdnt" ColumnName="LocationGpsNDecimalCrdnt" />
+          <ScalarProperty Name="LocationGpsEDecimalCrdnt" ColumnName="LocationGpsEDecimalCrdnt" />
+          <ScalarProperty Name="LocationDescription" ColumnName="LocationDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_Parts">
+      <EntityTypeMapping TypeName="BForModel.t_Parts">
+        <MappingFragment StoreEntitySet="t_Parts">
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_TravelRepeat">
+      <EntityTypeMapping TypeName="BForModel.t_TravelRepeat">
+        <MappingFragment StoreEntitySet="t_TravelRepeat">
+          <ScalarProperty Name="TravelRepeatID" ColumnName="TravelRepeatID" />
+          <ScalarProperty Name="TravelRepeatDescription" ColumnName="TravelRepeatDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDones">
+      <EntityTypeMapping TypeName="BForModel.TravelDone">
+        <MappingFragment StoreEntitySet="TravelDone">
+          <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+          <ScalarProperty Name="OriginLocationID" ColumnName="OriginLocationID" />
+          <ScalarProperty Name="DestinationLocationID" ColumnName="DestinationLocationID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDoneCars">
+      <EntityTypeMapping TypeName="BForModel.TravelDoneCar">
+        <MappingFragment StoreEntitySet="TravelDoneCars">
+          <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+          <ScalarProperty Name="CompanyCarPlatID" ColumnName="CompanyCarPlatID" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="FromLocationID" ColumnName="FromLocationID" />
+          <ScalarProperty Name="ToLocationID" ColumnName="ToLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDoneDrivers">
+      <EntityTypeMapping TypeName="BForModel.TravelDoneDriver">
+        <MappingFragment StoreEntitySet="TravelDoneDrivers">
+          <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+          <ScalarProperty Name="CompanyDriverID" ColumnName="CompanyDriverID" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="FromLocationID" ColumnName="FromLocationID" />
+          <ScalarProperty Name="ToLocationID" ColumnName="ToLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDoneLocations">
+      <EntityTypeMapping TypeName="BForModel.TravelDoneLocation">
+        <MappingFragment StoreEntitySet="TravelDoneLocations">
+          <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+          <ScalarProperty Name="TravelDoneLocationsID" ColumnName="TravelDoneLocationsID" />
+          <ScalarProperty Name="FromLocationID" ColumnName="FromLocationID" />
+          <ScalarProperty Name="ToLocationID" ColumnName="ToLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlanneds">
+      <EntityTypeMapping TypeName="BForModel.TravelPlanned">
+        <MappingFragment StoreEntitySet="TravelPlanned">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="OriginLocationID" ColumnName="OriginLocationID" />
+          <ScalarProperty Name="DestinationLocationID" ColumnName="DestinationLocationID" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="DriverPreferences" ColumnName="DriverPreferences" />
+          <ScalarProperty Name="IsTravelRepeat" ColumnName="IsTravelRepeat" />
+          <ScalarProperty Name="TravelRepeatID" ColumnName="TravelRepeatID" />
+          <ScalarProperty Name="QuantityWithRepeatition" ColumnName="QuantityWithRepeatition" />
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlannedCars">
+      <EntityTypeMapping TypeName="BForModel.TravelPlannedCar">
+        <MappingFragment StoreEntitySet="TravelPlannedCars">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="TravelPlannedTimesID" ColumnName="TravelPlannedTimesID" />
+          <ScalarProperty Name="CompanyCarPlatID" ColumnName="CompanyCarPlatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlannedDrivers">
+      <EntityTypeMapping TypeName="BForModel.TravelPlannedDriver">
+        <MappingFragment StoreEntitySet="TravelPlannedDrivers">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="TravelPlannedTimesID" ColumnName="TravelPlannedTimesID" />
+          <ScalarProperty Name="CompanyDriverID" ColumnName="CompanyDriverID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlannedLocations">
+      <EntityTypeMapping TypeName="BForModel.TravelPlannedLocation">
+        <MappingFragment StoreEntitySet="TravelPlannedLocations">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="TravelPlannedTimesID" ColumnName="TravelPlannedTimesID" />
+          <ScalarProperty Name="TravelPlannedLocationsID" ColumnName="TravelPlannedLocationsID" />
+          <ScalarProperty Name="FromLocationID" ColumnName="FromLocationID" />
+          <ScalarProperty Name="ToLocationID" ColumnName="ToLocationID" />
+          <ScalarProperty Name="EstimatedTravelMinutes" ColumnName="EstimatedTravelMinutes" />
+          <ScalarProperty Name="EstimatedTravelCost" ColumnName="EstimatedTravelCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlannedPassengers">
+      <EntityTypeMapping TypeName="BForModel.TravelPlannedPassenger">
+        <MappingFragment StoreEntitySet="TravelPlannedPassengers">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="TravelPlannedTimesID" ColumnName="TravelPlannedTimesID" />
+          <ScalarProperty Name="CompanyPassengerID" ColumnName="CompanyPassengerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlannedTimes">
+      <EntityTypeMapping TypeName="BForModel.TravelPlannedTime">
+        <MappingFragment StoreEntitySet="TravelPlannedTimes">
+          <ScalarProperty Name="TravelPlannedID" ColumnName="TravelPlannedID" />
+          <ScalarProperty Name="TravelPlannedTimesID" ColumnName="TravelPlannedTimesID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="CostFactor" ColumnName="CostFactor" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="t_CarTypeLicenseType" TypeName="BForModel.t_CarTypeLicenseType" StoreEntitySet="t_CarTypeLicenseType">
+      <EndProperty Name="t_CarType">
+        <ScalarProperty Name="CarTypeID" ColumnName="CarTypeID" />
+      </EndProperty>
+      <EndProperty Name="t_LicenseType">
+        <ScalarProperty Name="LincenseTypeID" ColumnName="LicenseTypeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TravelDonePassengers" TypeName="BForModel.TravelDonePassengers" StoreEntitySet="TravelDonePassengers">
+      <EndProperty Name="CompanyPassengers">
+        <ScalarProperty Name="CompanyPassengerID" ColumnName="CompanyPassengerID" />
+      </EndProperty>
+      <EndProperty Name="TravelDone">
+        <ScalarProperty Name="TravelDoneID" ColumnName="TravelDoneID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="BForModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="BForModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="BForModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="BForModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BForModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="BForModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BForModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="BForModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BForModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="t_DriverType">
+      <EntityTypeMapping TypeName="BForModel.t_DriverType">
+        <MappingFragment StoreEntitySet="t_DriverType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DriverTypeID" ColumnName="DriverTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="DriverTypes" TypeName="BForModel.DriverTypes" StoreEntitySet="DriverTypes">
+      <EndProperty Name="t_DriverType">
+        <ScalarProperty Name="DriverTypeID" ColumnName="DriverTypeID" />
+      </EndProperty>
+      <EndProperty Name="Driver">
+        <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

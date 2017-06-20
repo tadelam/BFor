@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cfb3e48ee9c4f12bbf0c19e21fa8002" Name="Diagram1">
+        <EntityTypeShape EntityType="BForModel.Car" Width="1.5" PointX="5.25" PointY="49.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.Company" Width="1.5" PointX="3" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyCar" Width="1.5" PointX="7.5" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyCustomerContact" Width="1.5" PointX="15.75" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyCustomerGroup" Width="1.5" PointX="5.25" PointY="33.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyCustomer" Width="1.5" PointX="7.5" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyDriver" Width="1.5" PointX="9.75" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyPart" Width="1.5" PointX="5.25" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyPassengerGroup" Width="1.5" PointX="5.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyPassenger" Width="1.5" PointX="10.5" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyPeriodTime" Width="1.5" PointX="8.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyServicePrice" Width="1.5" PointX="8.25" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanySupplierContact" Width="1.5" PointX="18.75" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanySupplierGroup" Width="1.5" PointX="8.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanySupplier" Width="1.5" PointX="16.5" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyTechnician" Width="1.5" PointX="5.25" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.CompanyUser" Width="1.5" PointX="13.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.DriverLicens" Width="1.5" PointX="19.5" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.Driver" Width="1.5" PointX="7.5" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.Passenger" Width="1.5" PointX="8.25" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.Period" Width="1.5" PointX="3.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.PeriodTime" Width="1.5" PointX="6" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDone" Width="1.5" PointX="12" PointY="54.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDoneCarLocation" Width="1.5" PointX="12" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDoneCar" Width="1.5" PointX="9.75" PointY="49.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDoneDriverLocation" Width="1.5" PointX="14.25" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDoneDriver" Width="1.5" PointX="12" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDoneLocation" Width="1.5" PointX="14.25" PointY="53.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDonePassengerCompany" Width="1.5" PointX="5.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RideDonePassengerLocation" Width="1.5" PointX="15.75" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlanned" Width="1.5" PointX="11.25" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedCarLocation" Width="1.5" PointX="20.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedCar" Width="1.5" PointX="13.5" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedDriverLocation" Width="1.5" PointX="23.75" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedDriver" Width="1.5" PointX="18.5" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedLocation" Width="1.5" PointX="16.5" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedObjectPrice" Width="1.5" PointX="13.5" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedPassengerCompany" Width="1.5" PointX="19.5" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedPassengerLocation" Width="1.5" PointX="21.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.RidePlannedTime" Width="1.5" PointX="13.5" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_CarBrands" Width="1.5" PointX="3" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_CarGroups" Width="1.5" PointX="5.25" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_CarType" Width="1.5" PointX="9" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_CompanyType" Width="1.5" PointX="0.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_ContactType" Width="1.5" PointX="11.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_CustomerGroups" Width="1.5" PointX="3" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_DriverGroups" Width="1.5" PointX="7.5" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_DriverType" Width="1.5" PointX="9.75" PointY="61.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_EntityType" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Items" Width="1.5" PointX="9" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Languages" Width="1.5" PointX="9" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_LicenseType" Width="1.5" PointX="11.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Locations" Width="1.5" PointX="9" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_NotifyBy" Width="1.5" PointX="11.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_NotifyByTiming" Width="1.5" PointX="11.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_NotifyType" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Parts" Width="1.5" PointX="3" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_PassengerGroups" Width="1.5" PointX="3" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_RideObjects" Width="1.5" PointX="11.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_RideType" Width="1.5" PointX="9" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Roles" Width="1.5" PointX="11.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_Services" Width="1.5" PointX="6" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.t_SupplierGroups" Width="1.5" PointX="6" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.Technician" Width="1.5" PointX="3" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.UserContactType" Width="1.5" PointX="13.5" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BForModel.User" Width="1.5" PointX="11.25" PointY="27.125" IsExpanded="true" />
+        <AssociationConnector Association="BForModel.FK_CarBrands_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Cars_ComapyCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Comapies_ComapyCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyCustomerGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyParts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyPassengerGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyPeriodTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyServicePrices" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanySupplierGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_CompanyTechnicians" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_RideDonePassengerCompany1" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_RidePlannedPassengerCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Companies_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompaniesA_CompanyCustomers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompaniesA_CompanySuppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompaniesB_CompanyCustomers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompaniesB_CompanySuppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Company_CompanyUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_CompanyType_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyCarPlat_RideDoneCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyCars_CompanyDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyCars_RidePlannedCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_CarGroup_CompanyCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyCustomers_CompanyCustomerContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_ContactType_CompanyCustomerContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_UserContactTypes_CompanyCustomerContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Users_CompanyCustomerContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyCustomerGroups_CompanyCustomers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CustomerGroups_CompanyCustomerGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyDrivers_RideDoneDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyDrivers_RidePlannedDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Drivers_CompanyDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_DriverGroups_CompanyDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Parts_CompanyParts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyPassengerGroup_CompanyPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_PassengerGroups_CompanyPassengerGroups1" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_ComapnyPassengers_RideDonePassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanyPassengers_RidePlannedPassengerLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Passengers_CompanyPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_PassengerGroups_CompanyPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_PeriodTimes_CompanyPeriodTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_Services_CompanyServicePrices" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanySuppliers_CompanySupplierContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_ContactType_CompanySupplierContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_CompanySupplierGroups_CompanySuppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_SupplierGroups_CompanySupplierGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Technicians_CompanyTechnicians" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Roles_CompanyUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_NotifyBy_CompanyUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_NotifyByTiming_CompanyUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Users_CompanyUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Drivers_DriverLicenses" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LicenseType_DriverLicenses" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Periods_PeriodTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Periods_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RideDoneCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RideDoneDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RideDoneLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RideDonePassengerCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RideDonePassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDone_RidePlannedTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneCarLocations_RidePlannedCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneCars_RideDoneCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneLocations_RideDoneCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneDriverLocations_RidePlannedDriverLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneDrivers_RideDoneDriverLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneLocations_RideDoneDriverLocations1" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneLocations_RideDonePassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDoneLocations_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationFrom_RideDoneLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationTo_RideDoneLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_Services_TravelDoneLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDonePassengerCompany_RidePlannedPassengerCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RideDonePassengerLocations_RidePlannedPassengerLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedCars" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedObjectPrices" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedPassengerCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedPassengerLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlanned_RidePlannedTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_CarType_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationDst_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationOrg_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_RideType_RidePlanned" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedCars_RidePlannedCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedLocations_RidePlannedCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedTimes_RidePlannedCarLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedDrivers_RidePlannedDriverLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedLocations_RidePlannedDriverLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedTimes_RidePlannedDriverLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedLocations_RidePlannedPassengerLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedTimes_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationFrom_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_LocationTo_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_Services_RidePlannedLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_RideObjects_RidePlannedObjectPrices" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_RidePlannedTimes_RidePlannedPassengerLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_CarType_CarBrands" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_ContactTypes_UserContactTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_t_Languages_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.FK_Users_UserContactTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.CompanyCarGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.DriverTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.t_CarTypeLicenseType" ManuallyRouted="false" />
+        <AssociationConnector Association="BForModel.t_RoleItems" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

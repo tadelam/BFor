@@ -1,0 +1,2660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BForModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="BForModel.Car" />
+    <EntitySet Name="Companies" EntityType="BForModel.Company" />
+    <EntitySet Name="CompanyCars" EntityType="BForModel.CompanyCar" />
+    <EntitySet Name="CompanyCustomerContacts" EntityType="BForModel.CompanyCustomerContact" />
+    <EntitySet Name="CompanyCustomerGroups" EntityType="BForModel.CompanyCustomerGroup" />
+    <EntitySet Name="CompanyCustomers" EntityType="BForModel.CompanyCustomer" />
+    <EntitySet Name="CompanyDrivers" EntityType="BForModel.CompanyDriver" />
+    <EntitySet Name="CompanyParts" EntityType="BForModel.CompanyPart" />
+    <EntitySet Name="CompanyPassengerGroups" EntityType="BForModel.CompanyPassengerGroup" />
+    <EntitySet Name="CompanyPassengers" EntityType="BForModel.CompanyPassenger" />
+    <EntitySet Name="CompanyPeriodTimes" EntityType="BForModel.CompanyPeriodTime" />
+    <EntitySet Name="CompanyServicePrices" EntityType="BForModel.CompanyServicePrice" />
+    <EntitySet Name="CompanySupplierContacts" EntityType="BForModel.CompanySupplierContact" />
+    <EntitySet Name="CompanySupplierGroups" EntityType="BForModel.CompanySupplierGroup" />
+    <EntitySet Name="CompanySuppliers" EntityType="BForModel.CompanySupplier" />
+    <EntitySet Name="CompanyTechnicians" EntityType="BForModel.CompanyTechnician" />
+    <EntitySet Name="CompanyUsers" EntityType="BForModel.CompanyUser" />
+    <EntitySet Name="DriverLicenses" EntityType="BForModel.DriverLicens" />
+    <EntitySet Name="Drivers" EntityType="BForModel.Driver" />
+    <EntitySet Name="Passengers" EntityType="BForModel.Passenger" />
+    <EntitySet Name="Periods" EntityType="BForModel.Period" />
+    <EntitySet Name="PeriodTimes" EntityType="BForModel.PeriodTime" />
+    <EntitySet Name="RideDones" EntityType="BForModel.RideDone" />
+    <EntitySet Name="RideDoneCarLocations" EntityType="BForModel.RideDoneCarLocation" />
+    <EntitySet Name="RideDoneCars" EntityType="BForModel.RideDoneCar" />
+    <EntitySet Name="RideDoneDriverLocations" EntityType="BForModel.RideDoneDriverLocation" />
+    <EntitySet Name="RideDoneDrivers" EntityType="BForModel.RideDoneDriver" />
+    <EntitySet Name="RideDoneLocations" EntityType="BForModel.RideDoneLocation" />
+    <EntitySet Name="RideDonePassengerCompanies" EntityType="BForModel.RideDonePassengerCompany" />
+    <EntitySet Name="RideDonePassengerLocations" EntityType="BForModel.RideDonePassengerLocation" />
+    <EntitySet Name="RidePlanneds" EntityType="BForModel.RidePlanned" />
+    <EntitySet Name="RidePlannedCarLocations" EntityType="BForModel.RidePlannedCarLocation" />
+    <EntitySet Name="RidePlannedCars" EntityType="BForModel.RidePlannedCar" />
+    <EntitySet Name="RidePlannedDriverLocations" EntityType="BForModel.RidePlannedDriverLocation" />
+    <EntitySet Name="RidePlannedDrivers" EntityType="BForModel.RidePlannedDriver" />
+    <EntitySet Name="RidePlannedLocations" EntityType="BForModel.RidePlannedLocation" />
+    <EntitySet Name="RidePlannedObjectPrices" EntityType="BForModel.RidePlannedObjectPrice" />
+    <EntitySet Name="RidePlannedPassengerCompanies" EntityType="BForModel.RidePlannedPassengerCompany" />
+    <EntitySet Name="RidePlannedPassengerLocations" EntityType="BForModel.RidePlannedPassengerLocation" />
+    <EntitySet Name="RidePlannedTimes" EntityType="BForModel.RidePlannedTime" />
+    <EntitySet Name="t_CarBrands" EntityType="BForModel.t_CarBrands" />
+    <EntitySet Name="t_CarGroups" EntityType="BForModel.t_CarGroups" />
+    <EntitySet Name="t_CarType" EntityType="BForModel.t_CarType" />
+    <EntitySet Name="t_CompanyType" EntityType="BForModel.t_CompanyType" />
+    <EntitySet Name="t_ContactType" EntityType="BForModel.t_ContactType" />
+    <EntitySet Name="t_CustomerGroups" EntityType="BForModel.t_CustomerGroups" />
+    <EntitySet Name="t_DriverGroups" EntityType="BForModel.t_DriverGroups" />
+    <EntitySet Name="t_DriverType" EntityType="BForModel.t_DriverType" />
+    <EntitySet Name="t_EntityType" EntityType="BForModel.t_EntityType" />
+    <EntitySet Name="t_Items" EntityType="BForModel.t_Items" />
+    <EntitySet Name="t_Languages" EntityType="BForModel.t_Languages" />
+    <EntitySet Name="t_LicenseType" EntityType="BForModel.t_LicenseType" />
+    <EntitySet Name="t_Locations" EntityType="BForModel.t_Locations" />
+    <EntitySet Name="t_NotifyBy" EntityType="BForModel.t_NotifyBy" />
+    <EntitySet Name="t_NotifyByTiming" EntityType="BForModel.t_NotifyByTiming" />
+    <EntitySet Name="t_NotifyType" EntityType="BForModel.t_NotifyType" />
+    <EntitySet Name="t_Parts" EntityType="BForModel.t_Parts" />
+    <EntitySet Name="t_PassengerGroups" EntityType="BForModel.t_PassengerGroups" />
+    <EntitySet Name="t_RideObjects" EntityType="BForModel.t_RideObjects" />
+    <EntitySet Name="t_RideType" EntityType="BForModel.t_RideType" />
+    <EntitySet Name="t_Roles" EntityType="BForModel.t_Roles" />
+    <EntitySet Name="t_Services" EntityType="BForModel.t_Services" />
+    <EntitySet Name="t_SupplierGroups" EntityType="BForModel.t_SupplierGroups" />
+    <EntitySet Name="Technicians" EntityType="BForModel.Technician" />
+    <EntitySet Name="UserContactTypes" EntityType="BForModel.UserContactType" />
+    <EntitySet Name="Users" EntityType="BForModel.User" />
+    <AssociationSet Name="FK_CarBrands_Cars" Association="BForModel.FK_CarBrands_Cars">
+      <End Role="t_CarBrands" EntitySet="t_CarBrands" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cars_ComapyCars" Association="BForModel.FK_Cars_ComapyCars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comapies_ComapyCars" Association="BForModel.FK_Comapies_ComapyCars">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyCustomerGroups" Association="BForModel.FK_Companies_CompanyCustomerGroups">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyCustomerGroups" EntitySet="CompanyCustomerGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyDrivers" Association="BForModel.FK_Companies_CompanyDrivers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyParts" Association="BForModel.FK_Companies_CompanyParts">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyParts" EntitySet="CompanyParts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyPassengerGroups" Association="BForModel.FK_Companies_CompanyPassengerGroups">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyPassengerGroups" EntitySet="CompanyPassengerGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyPassengers" Association="BForModel.FK_Companies_CompanyPassengers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyPeriodTimes" Association="BForModel.FK_Companies_CompanyPeriodTimes">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyPeriodTimes" EntitySet="CompanyPeriodTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyServicePrices" Association="BForModel.FK_Companies_CompanyServicePrices">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyServicePrices" EntitySet="CompanyServicePrices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanySupplierGroups" Association="BForModel.FK_Companies_CompanySupplierGroups">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanySupplierGroups" EntitySet="CompanySupplierGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyTechnicians" Association="BForModel.FK_Companies_CompanyTechnicians">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyTechnicians" EntitySet="CompanyTechnicians" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_RideDonePassengerCompany1" Association="BForModel.FK_Companies_RideDonePassengerCompany1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="RideDonePassengerCompany" EntitySet="RideDonePassengerCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_RidePlanned" Association="BForModel.FK_Companies_RidePlanned">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_RidePlannedPassengerCompany" Association="BForModel.FK_Companies_RidePlannedPassengerCompany">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="RidePlannedPassengerCompany" EntitySet="RidePlannedPassengerCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_Users" Association="BForModel.FK_Companies_Users">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompaniesA_CompanyCustomers" Association="BForModel.FK_CompaniesA_CompanyCustomers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyCustomers" EntitySet="CompanyCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompaniesA_CompanySuppliers" Association="BForModel.FK_CompaniesA_CompanySuppliers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanySuppliers" EntitySet="CompanySuppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompaniesB_CompanyCustomers" Association="BForModel.FK_CompaniesB_CompanyCustomers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyCustomers" EntitySet="CompanyCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompaniesB_CompanySuppliers" Association="BForModel.FK_CompaniesB_CompanySuppliers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanySuppliers" EntitySet="CompanySuppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_CompanyUsers" Association="BForModel.FK_Company_CompanyUsers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyUsers" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CompanyType_Companies" Association="BForModel.FK_t_CompanyType_Companies">
+      <End Role="t_CompanyType" EntitySet="t_CompanyType" />
+      <End Role="Companies" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCarPlat_RideDoneCars" Association="BForModel.FK_CompanyCarPlat_RideDoneCars">
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+      <End Role="RideDoneCars" EntitySet="RideDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCars_CompanyDrivers" Association="BForModel.FK_CompanyCars_CompanyDrivers">
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCars_RidePlannedCars" Association="BForModel.FK_CompanyCars_RidePlannedCars">
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+      <End Role="RidePlannedCars" EntitySet="RidePlannedCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CarGroup_CompanyCars" Association="BForModel.FK_t_CarGroup_CompanyCars">
+      <End Role="t_CarGroups" EntitySet="t_CarGroups" />
+      <End Role="CompanyCars" EntitySet="CompanyCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCustomers_CompanyCustomerContacts" Association="BForModel.FK_CompanyCustomers_CompanyCustomerContacts">
+      <End Role="CompanyCustomers" EntitySet="CompanyCustomers" />
+      <End Role="CompanyCustomerContacts" EntitySet="CompanyCustomerContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_ContactType_CompanyCustomerContacts" Association="BForModel.FK_t_ContactType_CompanyCustomerContacts">
+      <End Role="t_ContactType" EntitySet="t_ContactType" />
+      <End Role="CompanyCustomerContacts" EntitySet="CompanyCustomerContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserContactTypes_CompanyCustomerContacts" Association="BForModel.FK_UserContactTypes_CompanyCustomerContacts">
+      <End Role="UserContactTypes" EntitySet="UserContactTypes" />
+      <End Role="CompanyCustomerContacts" EntitySet="CompanyCustomerContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_CompanyCustomerContacts" Association="BForModel.FK_Users_CompanyCustomerContacts">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="CompanyCustomerContacts" EntitySet="CompanyCustomerContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCustomerGroups_CompanyCustomers" Association="BForModel.FK_CompanyCustomerGroups_CompanyCustomers">
+      <End Role="CompanyCustomerGroups" EntitySet="CompanyCustomerGroups" />
+      <End Role="CompanyCustomers" EntitySet="CompanyCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerGroups_CompanyCustomerGroups" Association="BForModel.FK_CustomerGroups_CompanyCustomerGroups">
+      <End Role="t_CustomerGroups" EntitySet="t_CustomerGroups" />
+      <End Role="CompanyCustomerGroups" EntitySet="CompanyCustomerGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyDrivers_RideDoneDrivers" Association="BForModel.FK_CompanyDrivers_RideDoneDrivers">
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+      <End Role="RideDoneDrivers" EntitySet="RideDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyDrivers_RidePlannedDrivers" Association="BForModel.FK_CompanyDrivers_RidePlannedDrivers">
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+      <End Role="RidePlannedDrivers" EntitySet="RidePlannedDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_CompanyDrivers" Association="BForModel.FK_Drivers_CompanyDrivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_DriverGroups_CompanyDrivers" Association="BForModel.FK_t_DriverGroups_CompanyDrivers">
+      <End Role="t_DriverGroups" EntitySet="t_DriverGroups" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parts_CompanyParts" Association="BForModel.FK_Parts_CompanyParts">
+      <End Role="t_Parts" EntitySet="t_Parts" />
+      <End Role="CompanyParts" EntitySet="CompanyParts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyPassengerGroup_CompanyPassengers" Association="BForModel.FK_CompanyPassengerGroup_CompanyPassengers">
+      <End Role="CompanyPassengerGroups" EntitySet="CompanyPassengerGroups" />
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PassengerGroups_CompanyPassengerGroups1" Association="BForModel.FK_PassengerGroups_CompanyPassengerGroups1">
+      <End Role="t_PassengerGroups" EntitySet="t_PassengerGroups" />
+      <End Role="CompanyPassengerGroups" EntitySet="CompanyPassengerGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComapnyPassengers_RideDonePassengers" Association="BForModel.FK_ComapnyPassengers_RideDonePassengers">
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+      <End Role="RideDonePassengerLocations" EntitySet="RideDonePassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyPassengers_RidePlannedPassengerLocations" Association="BForModel.FK_CompanyPassengers_RidePlannedPassengerLocations">
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+      <End Role="RidePlannedPassengerLocations" EntitySet="RidePlannedPassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passengers_CompanyPassengers" Association="BForModel.FK_Passengers_CompanyPassengers">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_PassengerGroups_CompanyPassengers" Association="BForModel.FK_t_PassengerGroups_CompanyPassengers">
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+      <End Role="CompanyPassengers1" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PeriodTimes_CompanyPeriodTimes" Association="BForModel.FK_PeriodTimes_CompanyPeriodTimes">
+      <End Role="PeriodTimes" EntitySet="PeriodTimes" />
+      <End Role="CompanyPeriodTimes" EntitySet="CompanyPeriodTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_Services_CompanyServicePrices" Association="BForModel.FK_t_Services_CompanyServicePrices">
+      <End Role="t_Services" EntitySet="t_Services" />
+      <End Role="CompanyServicePrices" EntitySet="CompanyServicePrices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanySuppliers_CompanySupplierContacts" Association="BForModel.FK_CompanySuppliers_CompanySupplierContacts">
+      <End Role="CompanySuppliers" EntitySet="CompanySuppliers" />
+      <End Role="CompanySupplierContacts" EntitySet="CompanySupplierContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_ContactType_CompanySupplierContacts" Association="BForModel.FK_t_ContactType_CompanySupplierContacts">
+      <End Role="t_ContactType" EntitySet="t_ContactType" />
+      <End Role="CompanySupplierContacts" EntitySet="CompanySupplierContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanySupplierGroups_CompanySuppliers" Association="BForModel.FK_CompanySupplierGroups_CompanySuppliers">
+      <End Role="CompanySupplierGroups" EntitySet="CompanySupplierGroups" />
+      <End Role="CompanySuppliers" EntitySet="CompanySuppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_SupplierGroups_CompanySupplierGroups" Association="BForModel.FK_t_SupplierGroups_CompanySupplierGroups">
+      <End Role="t_SupplierGroups" EntitySet="t_SupplierGroups" />
+      <End Role="CompanySupplierGroups" EntitySet="CompanySupplierGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Technicians_CompanyTechnicians" Association="BForModel.FK_Technicians_CompanyTechnicians">
+      <End Role="Technicians" EntitySet="Technicians" />
+      <End Role="CompanyTechnicians" EntitySet="CompanyTechnicians" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_CompanyUsers" Association="BForModel.FK_Roles_CompanyUsers">
+      <End Role="t_Roles" EntitySet="t_Roles" />
+      <End Role="CompanyUsers" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_NotifyBy_CompanyUsers" Association="BForModel.FK_t_NotifyBy_CompanyUsers">
+      <End Role="t_NotifyBy" EntitySet="t_NotifyBy" />
+      <End Role="CompanyUsers" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_NotifyByTiming_CompanyUsers" Association="BForModel.FK_t_NotifyByTiming_CompanyUsers">
+      <End Role="t_NotifyByTiming" EntitySet="t_NotifyByTiming" />
+      <End Role="CompanyUsers" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_CompanyUsers" Association="BForModel.FK_Users_CompanyUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="CompanyUsers" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_DriverLicenses" Association="BForModel.FK_Drivers_DriverLicenses">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DriverLicenses" EntitySet="DriverLicenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LicenseType_DriverLicenses" Association="BForModel.FK_t_LicenseType_DriverLicenses">
+      <End Role="t_LicenseType" EntitySet="t_LicenseType" />
+      <End Role="DriverLicenses" EntitySet="DriverLicenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periods_PeriodTimes" Association="BForModel.FK_Periods_PeriodTimes">
+      <End Role="Periods" EntitySet="Periods" />
+      <End Role="PeriodTimes" EntitySet="PeriodTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periods_RidePlanned" Association="BForModel.FK_Periods_RidePlanned">
+      <End Role="Periods" EntitySet="Periods" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RideDoneCars" Association="BForModel.FK_RideDone_RideDoneCars">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RideDoneCars" EntitySet="RideDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RideDoneDrivers" Association="BForModel.FK_RideDone_RideDoneDrivers">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RideDoneDrivers" EntitySet="RideDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RideDoneLocations" Association="BForModel.FK_RideDone_RideDoneLocations">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RideDonePassengerCompany" Association="BForModel.FK_RideDone_RideDonePassengerCompany">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RideDonePassengerCompany" EntitySet="RideDonePassengerCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RideDonePassengers" Association="BForModel.FK_RideDone_RideDonePassengers">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RideDonePassengerLocations" EntitySet="RideDonePassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDone_RidePlannedTimes" Association="BForModel.FK_RideDone_RidePlannedTimes">
+      <End Role="RideDone" EntitySet="RideDones" />
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneCarLocations_RidePlannedCarLocations" Association="BForModel.FK_RideDoneCarLocations_RidePlannedCarLocations">
+      <End Role="RideDoneCarLocations" EntitySet="RideDoneCarLocations" />
+      <End Role="RidePlannedCarLocations" EntitySet="RidePlannedCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneCars_RideDoneCarLocations" Association="BForModel.FK_RideDoneCars_RideDoneCarLocations">
+      <End Role="RideDoneCars" EntitySet="RideDoneCars" />
+      <End Role="RideDoneCarLocations" EntitySet="RideDoneCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneLocations_RideDoneCarLocations" Association="BForModel.FK_RideDoneLocations_RideDoneCarLocations">
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+      <End Role="RideDoneCarLocations" EntitySet="RideDoneCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneDriverLocations_RidePlannedDriverLocations" Association="BForModel.FK_RideDoneDriverLocations_RidePlannedDriverLocations">
+      <End Role="RideDoneDriverLocations" EntitySet="RideDoneDriverLocations" />
+      <End Role="RidePlannedDriverLocations" EntitySet="RidePlannedDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneDrivers_RideDoneDriverLocations" Association="BForModel.FK_RideDoneDrivers_RideDoneDriverLocations">
+      <End Role="RideDoneDrivers" EntitySet="RideDoneDrivers" />
+      <End Role="RideDoneDriverLocations" EntitySet="RideDoneDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneLocations_RideDoneDriverLocations1" Association="BForModel.FK_RideDoneLocations_RideDoneDriverLocations1">
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+      <End Role="RideDoneDriverLocations" EntitySet="RideDoneDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneLocations_RideDonePassengers" Association="BForModel.FK_RideDoneLocations_RideDonePassengers">
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+      <End Role="RideDonePassengerLocations" EntitySet="RideDonePassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDoneLocations_RidePlannedLocations" Association="BForModel.FK_RideDoneLocations_RidePlannedLocations">
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_RideDoneLocations" Association="BForModel.FK_t_LocationFrom_RideDoneLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_RideDoneLocations" Association="BForModel.FK_t_LocationTo_RideDoneLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_Services_TravelDoneLocations" Association="BForModel.FK_t_Services_TravelDoneLocations">
+      <End Role="t_Services" EntitySet="t_Services" />
+      <End Role="RideDoneLocations" EntitySet="RideDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDonePassengerCompany_RidePlannedPassengerCompany" Association="BForModel.FK_RideDonePassengerCompany_RidePlannedPassengerCompany">
+      <End Role="RideDonePassengerCompany" EntitySet="RideDonePassengerCompanies" />
+      <End Role="RidePlannedPassengerCompany" EntitySet="RidePlannedPassengerCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RideDonePassengerLocations_RidePlannedPassengerLocations" Association="BForModel.FK_RideDonePassengerLocations_RidePlannedPassengerLocations">
+      <End Role="RideDonePassengerLocations" EntitySet="RideDonePassengerLocations" />
+      <End Role="RidePlannedPassengerLocations" EntitySet="RidePlannedPassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedCars" Association="BForModel.FK_RidePlanned_RidePlannedCars">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedCars" EntitySet="RidePlannedCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedDrivers" Association="BForModel.FK_RidePlanned_RidePlannedDrivers">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedDrivers" EntitySet="RidePlannedDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedLocations" Association="BForModel.FK_RidePlanned_RidePlannedLocations">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedObjectPrices" Association="BForModel.FK_RidePlanned_RidePlannedObjectPrices">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedObjectPrices" EntitySet="RidePlannedObjectPrices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedPassengerCompany" Association="BForModel.FK_RidePlanned_RidePlannedPassengerCompany">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedPassengerCompany" EntitySet="RidePlannedPassengerCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedPassengerLocations" Association="BForModel.FK_RidePlanned_RidePlannedPassengerLocations">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedPassengerLocations" EntitySet="RidePlannedPassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlanned_RidePlannedTimes" Association="BForModel.FK_RidePlanned_RidePlannedTimes">
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CarType_RidePlanned" Association="BForModel.FK_t_CarType_RidePlanned">
+      <End Role="t_CarType" EntitySet="t_CarType" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationDst_RidePlanned" Association="BForModel.FK_t_LocationDst_RidePlanned">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationOrg_RidePlanned" Association="BForModel.FK_t_LocationOrg_RidePlanned">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_RideType_RidePlanned" Association="BForModel.FK_t_RideType_RidePlanned">
+      <End Role="t_RideType" EntitySet="t_RideType" />
+      <End Role="RidePlanned" EntitySet="RidePlanneds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedCars_RidePlannedCarLocations" Association="BForModel.FK_RidePlannedCars_RidePlannedCarLocations">
+      <End Role="RidePlannedCars" EntitySet="RidePlannedCars" />
+      <End Role="RidePlannedCarLocations" EntitySet="RidePlannedCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedLocations_RidePlannedCarLocations" Association="BForModel.FK_RidePlannedLocations_RidePlannedCarLocations">
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+      <End Role="RidePlannedCarLocations" EntitySet="RidePlannedCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedTimes_RidePlannedCarLocations" Association="BForModel.FK_RidePlannedTimes_RidePlannedCarLocations">
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+      <End Role="RidePlannedCarLocations" EntitySet="RidePlannedCarLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedDrivers_RidePlannedDriverLocations" Association="BForModel.FK_RidePlannedDrivers_RidePlannedDriverLocations">
+      <End Role="RidePlannedDrivers" EntitySet="RidePlannedDrivers" />
+      <End Role="RidePlannedDriverLocations" EntitySet="RidePlannedDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedLocations_RidePlannedDriverLocations" Association="BForModel.FK_RidePlannedLocations_RidePlannedDriverLocations">
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+      <End Role="RidePlannedDriverLocations" EntitySet="RidePlannedDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedTimes_RidePlannedDriverLocations" Association="BForModel.FK_RidePlannedTimes_RidePlannedDriverLocations">
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+      <End Role="RidePlannedDriverLocations" EntitySet="RidePlannedDriverLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedLocations_RidePlannedPassengerLocations" Association="BForModel.FK_RidePlannedLocations_RidePlannedPassengerLocations">
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+      <End Role="RidePlannedPassengerLocations" EntitySet="RidePlannedPassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedTimes_RidePlannedLocations" Association="BForModel.FK_RidePlannedTimes_RidePlannedLocations">
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_RidePlannedLocations" Association="BForModel.FK_t_LocationFrom_RidePlannedLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_RidePlannedLocations" Association="BForModel.FK_t_LocationTo_RidePlannedLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_Services_RidePlannedLocations" Association="BForModel.FK_t_Services_RidePlannedLocations">
+      <End Role="t_Services" EntitySet="t_Services" />
+      <End Role="RidePlannedLocations" EntitySet="RidePlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_RideObjects_RidePlannedObjectPrices" Association="BForModel.FK_t_RideObjects_RidePlannedObjectPrices">
+      <End Role="t_RideObjects" EntitySet="t_RideObjects" />
+      <End Role="RidePlannedObjectPrices" EntitySet="RidePlannedObjectPrices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RidePlannedTimes_RidePlannedPassengerLocations" Association="BForModel.FK_RidePlannedTimes_RidePlannedPassengerLocations">
+      <End Role="RidePlannedTimes" EntitySet="RidePlannedTimes" />
+      <End Role="RidePlannedPassengerLocations" EntitySet="RidePlannedPassengerLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CarType_CarBrands" Association="BForModel.FK_t_CarType_CarBrands">
+      <End Role="t_CarType" EntitySet="t_CarType" />
+      <End Role="t_CarBrands" EntitySet="t_CarBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_ContactTypes_UserContactTypes" Association="BForModel.FK_t_ContactTypes_UserContactTypes">
+      <End Role="t_ContactType" EntitySet="t_ContactType" />
+      <End Role="UserContactTypes" EntitySet="UserContactTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_Languages_Users" Association="BForModel.FK_t_Languages_Users">
+      <End Role="t_Languages" EntitySet="t_Languages" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserContactTypes" Association="BForModel.FK_Users_UserContactTypes">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserContactTypes" EntitySet="UserContactTypes" />
+    </AssociationSet>
+    <AssociationSet Name="CompanyCarGroups" Association="BForModel.CompanyCarGroups">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="t_CarGroups" EntitySet="t_CarGroups" />
+    </AssociationSet>
+    <AssociationSet Name="DriverTypes" Association="BForModel.DriverTypes">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="t_DriverType" EntitySet="t_DriverType" />
+    </AssociationSet>
+    <AssociationSet Name="t_CarTypeLicenseType" Association="BForModel.t_CarTypeLicenseType">
+      <End Role="t_CarType" EntitySet="t_CarType" />
+      <End Role="t_LicenseType" EntitySet="t_LicenseType" />
+    </AssociationSet>
+    <AssociationSet Name="t_RoleItems" Association="BForModel.t_RoleItems">
+      <End Role="t_Items" EntitySet="t_Items" />
+      <End Role="t_Roles" EntitySet="t_Roles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="PlateNo" />
+    </Key>
+    <Property Name="PlateNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BrandModelID" Type="Int32" Nullable="false" />
+    <Property Name="LicenseDate" Type="DateTime" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="t_CarBrands" Relationship="BForModel.FK_CarBrands_Cars" FromRole="Cars" ToRole="t_CarBrands" />
+    <NavigationProperty Name="CompanyCars" Relationship="BForModel.FK_Cars_ComapyCars" FromRole="Cars" ToRole="CompanyCars" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OrgnuizationNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="WebHeader" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="WebFooter" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <Property Name="DistanceUnitID" Type="Int32" />
+    <Property Name="CompanyTypeID" Type="Int64" />
+    <NavigationProperty Name="CompanyCars" Relationship="BForModel.FK_Comapies_ComapyCars" FromRole="Companies" ToRole="CompanyCars" />
+    <NavigationProperty Name="CompanyCustomerGroups" Relationship="BForModel.FK_Companies_CompanyCustomerGroups" FromRole="Companies" ToRole="CompanyCustomerGroups" />
+    <NavigationProperty Name="CompanyDrivers" Relationship="BForModel.FK_Companies_CompanyDrivers" FromRole="Companies" ToRole="CompanyDrivers" />
+    <NavigationProperty Name="CompanyParts" Relationship="BForModel.FK_Companies_CompanyParts" FromRole="Companies" ToRole="CompanyParts" />
+    <NavigationProperty Name="CompanyPassengerGroups" Relationship="BForModel.FK_Companies_CompanyPassengerGroups" FromRole="Companies" ToRole="CompanyPassengerGroups" />
+    <NavigationProperty Name="CompanyPassengers" Relationship="BForModel.FK_Companies_CompanyPassengers" FromRole="Companies" ToRole="CompanyPassengers" />
+    <NavigationProperty Name="CompanyPeriodTimes" Relationship="BForModel.FK_Companies_CompanyPeriodTimes" FromRole="Companies" ToRole="CompanyPeriodTimes" />
+    <NavigationProperty Name="CompanyServicePrices" Relationship="BForModel.FK_Companies_CompanyServicePrices" FromRole="Companies" ToRole="CompanyServicePrices" />
+    <NavigationProperty Name="CompanySupplierGroups" Relationship="BForModel.FK_Companies_CompanySupplierGroups" FromRole="Companies" ToRole="CompanySupplierGroups" />
+    <NavigationProperty Name="CompanyTechnicians" Relationship="BForModel.FK_Companies_CompanyTechnicians" FromRole="Companies" ToRole="CompanyTechnicians" />
+    <NavigationProperty Name="RideDonePassengerCompanies" Relationship="BForModel.FK_Companies_RideDonePassengerCompany1" FromRole="Companies" ToRole="RideDonePassengerCompany" />
+    <NavigationProperty Name="RidePlanneds" Relationship="BForModel.FK_Companies_RidePlanned" FromRole="Companies" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedPassengerCompanies" Relationship="BForModel.FK_Companies_RidePlannedPassengerCompany" FromRole="Companies" ToRole="RidePlannedPassengerCompany" />
+    <NavigationProperty Name="Users" Relationship="BForModel.FK_Companies_Users" FromRole="Companies" ToRole="Users" />
+    <NavigationProperty Name="CompanyCustomers" Relationship="BForModel.FK_CompaniesA_CompanyCustomers" FromRole="Companies" ToRole="CompanyCustomers" />
+    <NavigationProperty Name="CompanySuppliers" Relationship="BForModel.FK_CompaniesA_CompanySuppliers" FromRole="Companies" ToRole="CompanySuppliers" />
+    <NavigationProperty Name="CompanyCustomers1" Relationship="BForModel.FK_CompaniesB_CompanyCustomers" FromRole="Companies" ToRole="CompanyCustomers" />
+    <NavigationProperty Name="CompanySuppliers1" Relationship="BForModel.FK_CompaniesB_CompanySuppliers" FromRole="Companies" ToRole="CompanySuppliers" />
+    <NavigationProperty Name="CompanyUsers" Relationship="BForModel.FK_Company_CompanyUsers" FromRole="Companies" ToRole="CompanyUsers" />
+    <NavigationProperty Name="t_CompanyType" Relationship="BForModel.FK_t_CompanyType_Companies" FromRole="Companies" ToRole="t_CompanyType" />
+    <NavigationProperty Name="t_CarGroups" Relationship="BForModel.CompanyCarGroups" FromRole="Companies" ToRole="t_CarGroups" />
+  </EntityType>
+  <EntityType Name="CompanyCar">
+    <Key>
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="CompanyCarPlatID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CarPlatNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="InsuranceDate" Type="DateTime" Precision="0" />
+    <Property Name="CarGroupID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Car" Relationship="BForModel.FK_Cars_ComapyCars" FromRole="CompanyCars" ToRole="Cars" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Comapies_ComapyCars" FromRole="CompanyCars" ToRole="Companies" />
+    <NavigationProperty Name="RideDoneCars" Relationship="BForModel.FK_CompanyCarPlat_RideDoneCars" FromRole="CompanyCars" ToRole="RideDoneCars" />
+    <NavigationProperty Name="CompanyDrivers" Relationship="BForModel.FK_CompanyCars_CompanyDrivers" FromRole="CompanyCars" ToRole="CompanyDrivers" />
+    <NavigationProperty Name="RidePlannedCars" Relationship="BForModel.FK_CompanyCars_RidePlannedCars" FromRole="CompanyCars" ToRole="RidePlannedCars" />
+    <NavigationProperty Name="t_CarGroups" Relationship="BForModel.FK_t_CarGroup_CompanyCars" FromRole="CompanyCars" ToRole="t_CarGroups" />
+  </EntityType>
+  <EntityType Name="CompanyCustomerContact">
+    <Key>
+      <PropertyRef Name="CompanyCustomerID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ContactTypeID" />
+    </Key>
+    <Property Name="CompanyCustomerID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ContactDetails" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="IsMain" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CompanyCustomer" Relationship="BForModel.FK_CompanyCustomers_CompanyCustomerContacts" FromRole="CompanyCustomerContacts" ToRole="CompanyCustomers" />
+    <NavigationProperty Name="t_ContactType" Relationship="BForModel.FK_t_ContactType_CompanyCustomerContacts" FromRole="CompanyCustomerContacts" ToRole="t_ContactType" />
+    <NavigationProperty Name="UserContactType" Relationship="BForModel.FK_UserContactTypes_CompanyCustomerContacts" FromRole="CompanyCustomerContacts" ToRole="UserContactTypes" />
+    <NavigationProperty Name="User" Relationship="BForModel.FK_Users_CompanyCustomerContacts" FromRole="CompanyCustomerContacts" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="CompanyCustomerGroup">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="CustomerGroupID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="CustomerGroupID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyCustomerGroups" FromRole="CompanyCustomerGroups" ToRole="Companies" />
+    <NavigationProperty Name="CompanyCustomers" Relationship="BForModel.FK_CompanyCustomerGroups_CompanyCustomers" FromRole="CompanyCustomerGroups" ToRole="CompanyCustomers" />
+    <NavigationProperty Name="t_CustomerGroups" Relationship="BForModel.FK_CustomerGroups_CompanyCustomerGroups" FromRole="CompanyCustomerGroups" ToRole="t_CustomerGroups" />
+  </EntityType>
+  <EntityType Name="CompanyCustomer">
+    <Key>
+      <PropertyRef Name="CompanyCustomerID" />
+    </Key>
+    <Property Name="CompanyCustomerID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyAID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyBID" Type="Int32" Nullable="false" />
+    <Property Name="CustometrGroupID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_CompaniesA_CompanyCustomers" FromRole="CompanyCustomers" ToRole="Companies" />
+    <NavigationProperty Name="Company1" Relationship="BForModel.FK_CompaniesB_CompanyCustomers" FromRole="CompanyCustomers" ToRole="Companies" />
+    <NavigationProperty Name="CompanyCustomerContacts" Relationship="BForModel.FK_CompanyCustomers_CompanyCustomerContacts" FromRole="CompanyCustomers" ToRole="CompanyCustomerContacts" />
+    <NavigationProperty Name="CompanyCustomerGroup" Relationship="BForModel.FK_CompanyCustomerGroups_CompanyCustomers" FromRole="CompanyCustomers" ToRole="CompanyCustomerGroups" />
+  </EntityType>
+  <EntityType Name="CompanyDriver">
+    <Key>
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="CompanyDriverID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="DriverID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="DriverGroupID" Type="Int32" Nullable="false" />
+    <Property Name="MainCompanyCarPlatID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyDrivers" FromRole="CompanyDrivers" ToRole="Companies" />
+    <NavigationProperty Name="CompanyCar" Relationship="BForModel.FK_CompanyCars_CompanyDrivers" FromRole="CompanyDrivers" ToRole="CompanyCars" />
+    <NavigationProperty Name="RideDoneDrivers" Relationship="BForModel.FK_CompanyDrivers_RideDoneDrivers" FromRole="CompanyDrivers" ToRole="RideDoneDrivers" />
+    <NavigationProperty Name="RidePlannedDrivers" Relationship="BForModel.FK_CompanyDrivers_RidePlannedDrivers" FromRole="CompanyDrivers" ToRole="RidePlannedDrivers" />
+    <NavigationProperty Name="Driver" Relationship="BForModel.FK_Drivers_CompanyDrivers" FromRole="CompanyDrivers" ToRole="Drivers" />
+    <NavigationProperty Name="t_DriverGroups" Relationship="BForModel.FK_t_DriverGroups_CompanyDrivers" FromRole="CompanyDrivers" ToRole="t_DriverGroups" />
+  </EntityType>
+  <EntityType Name="CompanyPart">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="PartID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="PartID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FixingCost" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="FixingDays" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyParts" FromRole="CompanyParts" ToRole="Companies" />
+    <NavigationProperty Name="t_Parts" Relationship="BForModel.FK_Parts_CompanyParts" FromRole="CompanyParts" ToRole="t_Parts" />
+  </EntityType>
+  <EntityType Name="CompanyPassengerGroup">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="PassengerGroupID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="PassengerGroupID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyPassengerGroups" FromRole="CompanyPassengerGroups" ToRole="Companies" />
+    <NavigationProperty Name="CompanyPassengers" Relationship="BForModel.FK_CompanyPassengerGroup_CompanyPassengers" FromRole="CompanyPassengerGroups" ToRole="CompanyPassengers" />
+    <NavigationProperty Name="t_PassengerGroups" Relationship="BForModel.FK_PassengerGroups_CompanyPassengerGroups1" FromRole="CompanyPassengerGroups" ToRole="t_PassengerGroups" />
+  </EntityType>
+  <EntityType Name="CompanyPassenger">
+    <Key>
+      <PropertyRef Name="CompanyPassengerID" />
+    </Key>
+    <Property Name="CompanyPassengerID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="PassengerID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="PassengerGroupID" Type="Int32" Nullable="false" />
+    <Property Name="FromDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyPassengers" FromRole="CompanyPassengers" ToRole="Companies" />
+    <NavigationProperty Name="CompanyPassengerGroup" Relationship="BForModel.FK_CompanyPassengerGroup_CompanyPassengers" FromRole="CompanyPassengers" ToRole="CompanyPassengerGroups" />
+    <NavigationProperty Name="RideDonePassengerLocations" Relationship="BForModel.FK_ComapnyPassengers_RideDonePassengers" FromRole="CompanyPassengers" ToRole="RideDonePassengerLocations" />
+    <NavigationProperty Name="RidePlannedPassengerLocations" Relationship="BForModel.FK_CompanyPassengers_RidePlannedPassengerLocations" FromRole="CompanyPassengers" ToRole="RidePlannedPassengerLocations" />
+    <NavigationProperty Name="Passenger" Relationship="BForModel.FK_Passengers_CompanyPassengers" FromRole="CompanyPassengers" ToRole="Passengers" />
+    <NavigationProperty Name="CompanyPassengers1" Relationship="BForModel.FK_t_PassengerGroups_CompanyPassengers" FromRole="CompanyPassengers" ToRole="CompanyPassengers1" />
+    <NavigationProperty Name="CompanyPassenger1" Relationship="BForModel.FK_t_PassengerGroups_CompanyPassengers" FromRole="CompanyPassengers1" ToRole="CompanyPassengers" />
+  </EntityType>
+  <EntityType Name="CompanyPeriodTime">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="PeriodID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="PeriodID" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FromTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="ToTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IsActiveDay" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyPeriodTimes" FromRole="CompanyPeriodTimes" ToRole="Companies" />
+    <NavigationProperty Name="PeriodTime" Relationship="BForModel.FK_PeriodTimes_CompanyPeriodTimes" FromRole="CompanyPeriodTimes" ToRole="PeriodTimes" />
+  </EntityType>
+  <EntityType Name="CompanyServicePrice">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="ServiceID" Type="Int32" Nullable="false" />
+    <Property Name="ServicePrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyServicePrices" FromRole="CompanyServicePrices" ToRole="Companies" />
+    <NavigationProperty Name="t_Services" Relationship="BForModel.FK_t_Services_CompanyServicePrices" FromRole="CompanyServicePrices" ToRole="t_Services" />
+  </EntityType>
+  <EntityType Name="CompanySupplierContact">
+    <Key>
+      <PropertyRef Name="CompanySupplierID" />
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="CompanySupplierID" Type="Int32" Nullable="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ContactValue" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ContactDetails" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="IsMain" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CompanySupplier" Relationship="BForModel.FK_CompanySuppliers_CompanySupplierContacts" FromRole="CompanySupplierContacts" ToRole="CompanySuppliers" />
+    <NavigationProperty Name="t_ContactType" Relationship="BForModel.FK_t_ContactType_CompanySupplierContacts" FromRole="CompanySupplierContacts" ToRole="t_ContactType" />
+  </EntityType>
+  <EntityType Name="CompanySupplierGroup">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="SupplierGroupID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="SupplierGroupID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanySupplierGroups" FromRole="CompanySupplierGroups" ToRole="Companies" />
+    <NavigationProperty Name="CompanySuppliers" Relationship="BForModel.FK_CompanySupplierGroups_CompanySuppliers" FromRole="CompanySupplierGroups" ToRole="CompanySuppliers" />
+    <NavigationProperty Name="t_SupplierGroups" Relationship="BForModel.FK_t_SupplierGroups_CompanySupplierGroups" FromRole="CompanySupplierGroups" ToRole="t_SupplierGroups" />
+  </EntityType>
+  <EntityType Name="CompanySupplier">
+    <Key>
+      <PropertyRef Name="CompanySupplierID" />
+    </Key>
+    <Property Name="CompanySupplierID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyAID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyBID" Type="Int32" Nullable="false" />
+    <Property Name="SupplierGroupID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_CompaniesA_CompanySuppliers" FromRole="CompanySuppliers" ToRole="Companies" />
+    <NavigationProperty Name="Company1" Relationship="BForModel.FK_CompaniesB_CompanySuppliers" FromRole="CompanySuppliers" ToRole="Companies" />
+    <NavigationProperty Name="CompanySupplierContacts" Relationship="BForModel.FK_CompanySuppliers_CompanySupplierContacts" FromRole="CompanySuppliers" ToRole="CompanySupplierContacts" />
+    <NavigationProperty Name="CompanySupplierGroup" Relationship="BForModel.FK_CompanySupplierGroups_CompanySuppliers" FromRole="CompanySuppliers" ToRole="CompanySupplierGroups" />
+  </EntityType>
+  <EntityType Name="CompanyTechnician">
+    <Key>
+      <PropertyRef Name="CompanyTechnicianID" />
+    </Key>
+    <Property Name="CompanyTechnicianID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="TechnicianID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_CompanyTechnicians" FromRole="CompanyTechnicians" ToRole="Companies" />
+    <NavigationProperty Name="Technician" Relationship="BForModel.FK_Technicians_CompanyTechnicians" FromRole="CompanyTechnicians" ToRole="Technicians" />
+  </EntityType>
+  <EntityType Name="CompanyUser">
+    <Key>
+      <PropertyRef Name="CompanyUserID" />
+    </Key>
+    <Property Name="CompanyUserID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="EntityTypeRepSumID_UserTypeIDs_" Type="Int32" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsShared" Type="Boolean" Nullable="false" />
+    <Property Name="NotifyTypeRepSum" Type="Int32" Nullable="false" />
+    <Property Name="NotifyBy" Type="Int32" />
+    <Property Name="NotifyByTiming" Type="Int32" />
+    <Property Name="NotifyByTimingAt" Type="Time" Precision="7" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Company_CompanyUsers" FromRole="CompanyUsers" ToRole="Companies" />
+    <NavigationProperty Name="t_Roles" Relationship="BForModel.FK_Roles_CompanyUsers" FromRole="CompanyUsers" ToRole="t_Roles" />
+    <NavigationProperty Name="t_NotifyBy" Relationship="BForModel.FK_t_NotifyBy_CompanyUsers" FromRole="CompanyUsers" ToRole="t_NotifyBy" />
+    <NavigationProperty Name="t_NotifyByTiming" Relationship="BForModel.FK_t_NotifyByTiming_CompanyUsers" FromRole="CompanyUsers" ToRole="t_NotifyByTiming" />
+    <NavigationProperty Name="User" Relationship="BForModel.FK_Users_CompanyUsers" FromRole="CompanyUsers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="DriverLicens">
+    <Key>
+      <PropertyRef Name="DriverID" />
+      <PropertyRef Name="LicenseTypeID" />
+    </Key>
+    <Property Name="DriverID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="LicenseTypeID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="LicenseTypeDetails" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Driver" Relationship="BForModel.FK_Drivers_DriverLicenses" FromRole="DriverLicenses" ToRole="Drivers" />
+    <NavigationProperty Name="t_LicenseType" Relationship="BForModel.FK_t_LicenseType_DriverLicenses" FromRole="DriverLicenses" ToRole="t_LicenseType" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="DriverID" />
+    </Key>
+    <Property Name="DriverID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="LicenseDetails" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyDrivers" Relationship="BForModel.FK_Drivers_CompanyDrivers" FromRole="Drivers" ToRole="CompanyDrivers" />
+    <NavigationProperty Name="DriverLicenses" Relationship="BForModel.FK_Drivers_DriverLicenses" FromRole="Drivers" ToRole="DriverLicenses" />
+    <NavigationProperty Name="t_DriverType" Relationship="BForModel.DriverTypes" FromRole="Drivers" ToRole="t_DriverType" />
+  </EntityType>
+  <EntityType Name="Passenger">
+    <Key>
+      <PropertyRef Name="PassengerID" />
+    </Key>
+    <Property Name="PassengerID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="FatherName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Gender" Type="Int32" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="CompanyPassengers" Relationship="BForModel.FK_Passengers_CompanyPassengers" FromRole="Passengers" ToRole="CompanyPassengers" />
+  </EntityType>
+  <EntityType Name="Period">
+    <Key>
+      <PropertyRef Name="PeriodID" />
+    </Key>
+    <Property Name="PeriodID" Type="Int32" Nullable="false" />
+    <Property Name="PeriodDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PeriodTimes" Relationship="BForModel.FK_Periods_PeriodTimes" FromRole="Periods" ToRole="PeriodTimes" />
+    <NavigationProperty Name="RidePlanneds" Relationship="BForModel.FK_Periods_RidePlanned" FromRole="Periods" ToRole="RidePlanned" />
+  </EntityType>
+  <EntityType Name="PeriodTime">
+    <Key>
+      <PropertyRef Name="PeriodID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="PeriodID" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DayInWeek" Type="Byte" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyPeriodTimes" Relationship="BForModel.FK_PeriodTimes_CompanyPeriodTimes" FromRole="PeriodTimes" ToRole="CompanyPeriodTimes" />
+    <NavigationProperty Name="Period" Relationship="BForModel.FK_Periods_PeriodTimes" FromRole="PeriodTimes" ToRole="Periods" />
+  </EntityType>
+  <EntityType Name="RideDone">
+    <Key>
+      <PropertyRef Name="RideDoneID" />
+    </Key>
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FromTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="ToTime" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="RideDoneCars" Relationship="BForModel.FK_RideDone_RideDoneCars" FromRole="RideDone" ToRole="RideDoneCars" />
+    <NavigationProperty Name="RideDoneDrivers" Relationship="BForModel.FK_RideDone_RideDoneDrivers" FromRole="RideDone" ToRole="RideDoneDrivers" />
+    <NavigationProperty Name="RideDoneLocations" Relationship="BForModel.FK_RideDone_RideDoneLocations" FromRole="RideDone" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RideDonePassengerCompanies" Relationship="BForModel.FK_RideDone_RideDonePassengerCompany" FromRole="RideDone" ToRole="RideDonePassengerCompany" />
+    <NavigationProperty Name="RideDonePassengerLocations" Relationship="BForModel.FK_RideDone_RideDonePassengers" FromRole="RideDone" ToRole="RideDonePassengerLocations" />
+    <NavigationProperty Name="RidePlannedTimes" Relationship="BForModel.FK_RideDone_RidePlannedTimes" FromRole="RideDone" ToRole="RidePlannedTimes" />
+  </EntityType>
+  <EntityType Name="RideDoneCarLocation">
+    <Key>
+      <PropertyRef Name="RideDoneCarLocationID" />
+    </Key>
+    <Property Name="RideDoneCarLocationID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RidePlannedCarLocations" Relationship="BForModel.FK_RideDoneCarLocations_RidePlannedCarLocations" FromRole="RideDoneCarLocations" ToRole="RidePlannedCarLocations" />
+    <NavigationProperty Name="RideDoneCar" Relationship="BForModel.FK_RideDoneCars_RideDoneCarLocations" FromRole="RideDoneCarLocations" ToRole="RideDoneCars" />
+    <NavigationProperty Name="RideDoneLocation" Relationship="BForModel.FK_RideDoneLocations_RideDoneCarLocations" FromRole="RideDoneCarLocations" ToRole="RideDoneLocations" />
+  </EntityType>
+  <EntityType Name="RideDoneCar">
+    <Key>
+      <PropertyRef Name="RideDoneID" />
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CompanyCar" Relationship="BForModel.FK_CompanyCarPlat_RideDoneCars" FromRole="RideDoneCars" ToRole="CompanyCars" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RideDoneCars" FromRole="RideDoneCars" ToRole="RideDone" />
+    <NavigationProperty Name="RideDoneCarLocations" Relationship="BForModel.FK_RideDoneCars_RideDoneCarLocations" FromRole="RideDoneCars" ToRole="RideDoneCarLocations" />
+  </EntityType>
+  <EntityType Name="RideDoneDriverLocation">
+    <Key>
+      <PropertyRef Name="RideDoneDriverLocationsID" />
+    </Key>
+    <Property Name="RideDoneDriverLocationsID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RidePlannedDriverLocations" Relationship="BForModel.FK_RideDoneDriverLocations_RidePlannedDriverLocations" FromRole="RideDoneDriverLocations" ToRole="RidePlannedDriverLocations" />
+    <NavigationProperty Name="RideDoneDriver" Relationship="BForModel.FK_RideDoneDrivers_RideDoneDriverLocations" FromRole="RideDoneDriverLocations" ToRole="RideDoneDrivers" />
+    <NavigationProperty Name="RideDoneLocation" Relationship="BForModel.FK_RideDoneLocations_RideDoneDriverLocations1" FromRole="RideDoneDriverLocations" ToRole="RideDoneLocations" />
+  </EntityType>
+  <EntityType Name="RideDoneDriver">
+    <Key>
+      <PropertyRef Name="RideDoneID" />
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CompanyDriver" Relationship="BForModel.FK_CompanyDrivers_RideDoneDrivers" FromRole="RideDoneDrivers" ToRole="CompanyDrivers" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RideDoneDrivers" FromRole="RideDoneDrivers" ToRole="RideDone" />
+    <NavigationProperty Name="RideDoneDriverLocations" Relationship="BForModel.FK_RideDoneDrivers_RideDoneDriverLocations" FromRole="RideDoneDrivers" ToRole="RideDoneDriverLocations" />
+  </EntityType>
+  <EntityType Name="RideDoneLocation">
+    <Key>
+      <PropertyRef Name="RideDoneLocationsID" />
+    </Key>
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneLocationsID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FromLocationID" Type="Int32" Nullable="false" />
+    <Property Name="ToLocationID" Type="Int32" Nullable="false" />
+    <Property Name="RideMinutes" Type="Int64" Nullable="false" />
+    <Property Name="OnTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ServiceID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RideDoneLocations" FromRole="RideDoneLocations" ToRole="RideDone" />
+    <NavigationProperty Name="RideDoneCarLocations" Relationship="BForModel.FK_RideDoneLocations_RideDoneCarLocations" FromRole="RideDoneLocations" ToRole="RideDoneCarLocations" />
+    <NavigationProperty Name="RideDoneDriverLocations" Relationship="BForModel.FK_RideDoneLocations_RideDoneDriverLocations1" FromRole="RideDoneLocations" ToRole="RideDoneDriverLocations" />
+    <NavigationProperty Name="RideDonePassengerLocations" Relationship="BForModel.FK_RideDoneLocations_RideDonePassengers" FromRole="RideDoneLocations" ToRole="RideDonePassengerLocations" />
+    <NavigationProperty Name="RidePlannedLocations" Relationship="BForModel.FK_RideDoneLocations_RidePlannedLocations" FromRole="RideDoneLocations" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="t_Locations" Relationship="BForModel.FK_t_LocationFrom_RideDoneLocations" FromRole="RideDoneLocations" ToRole="t_Locations" />
+    <NavigationProperty Name="t_Locations1" Relationship="BForModel.FK_t_LocationTo_RideDoneLocations" FromRole="RideDoneLocations" ToRole="t_Locations" />
+    <NavigationProperty Name="t_Services" Relationship="BForModel.FK_t_Services_TravelDoneLocations" FromRole="RideDoneLocations" ToRole="t_Services" />
+  </EntityType>
+  <EntityType Name="RideDonePassengerCompany">
+    <Key>
+      <PropertyRef Name="RideDonePassengerCompanyID" />
+    </Key>
+    <Property Name="RideDonePassengerCompanyID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_RideDonePassengerCompany1" FromRole="RideDonePassengerCompany" ToRole="Companies" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RideDonePassengerCompany" FromRole="RideDonePassengerCompany" ToRole="RideDone" />
+    <NavigationProperty Name="RidePlannedPassengerCompanies" Relationship="BForModel.FK_RideDonePassengerCompany_RidePlannedPassengerCompany" FromRole="RideDonePassengerCompany" ToRole="RidePlannedPassengerCompany" />
+  </EntityType>
+  <EntityType Name="RideDonePassengerLocation">
+    <Key>
+      <PropertyRef Name="RideDonePassengerLocationsID" />
+    </Key>
+    <Property Name="RideDonePassengerLocationsID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideDoneID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyPassengerID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CompanyPassenger" Relationship="BForModel.FK_ComapnyPassengers_RideDonePassengers" FromRole="RideDonePassengerLocations" ToRole="CompanyPassengers" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RideDonePassengers" FromRole="RideDonePassengerLocations" ToRole="RideDone" />
+    <NavigationProperty Name="RideDoneLocation" Relationship="BForModel.FK_RideDoneLocations_RideDonePassengers" FromRole="RideDonePassengerLocations" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RidePlannedPassengerLocations" Relationship="BForModel.FK_RideDonePassengerLocations_RidePlannedPassengerLocations" FromRole="RideDonePassengerLocations" ToRole="RidePlannedPassengerLocations" />
+  </EntityType>
+  <EntityType Name="RidePlanned">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="OriginCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="RideName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OriginLocationID" Type="Int32" Nullable="false" />
+    <Property Name="DestinationLocationID" Type="Int32" Nullable="false" />
+    <Property Name="FromDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ToDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DriverPreferences" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsTravelRepeat" Type="Boolean" Nullable="false" />
+    <Property Name="PeriodID" Type="Int32" />
+    <Property Name="RideTypeID" Type="Int32" />
+    <Property Name="CarTypeID" Type="Int32" />
+    <Property Name="EstimatedTravelMinutes" Type="Int64" Nullable="false" />
+    <Property Name="EstimatedTravelDistance" Type="Int64" Nullable="false" />
+    <Property Name="Escort" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_RidePlanned" FromRole="RidePlanned" ToRole="Companies" />
+    <NavigationProperty Name="Period" Relationship="BForModel.FK_Periods_RidePlanned" FromRole="RidePlanned" ToRole="Periods" />
+    <NavigationProperty Name="RidePlannedCars" Relationship="BForModel.FK_RidePlanned_RidePlannedCars" FromRole="RidePlanned" ToRole="RidePlannedCars" />
+    <NavigationProperty Name="RidePlannedDrivers" Relationship="BForModel.FK_RidePlanned_RidePlannedDrivers" FromRole="RidePlanned" ToRole="RidePlannedDrivers" />
+    <NavigationProperty Name="RidePlannedLocations" Relationship="BForModel.FK_RidePlanned_RidePlannedLocations" FromRole="RidePlanned" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedObjectPrices" Relationship="BForModel.FK_RidePlanned_RidePlannedObjectPrices" FromRole="RidePlanned" ToRole="RidePlannedObjectPrices" />
+    <NavigationProperty Name="RidePlannedPassengerCompanies" Relationship="BForModel.FK_RidePlanned_RidePlannedPassengerCompany" FromRole="RidePlanned" ToRole="RidePlannedPassengerCompany" />
+    <NavigationProperty Name="RidePlannedPassengerLocations" Relationship="BForModel.FK_RidePlanned_RidePlannedPassengerLocations" FromRole="RidePlanned" ToRole="RidePlannedPassengerLocations" />
+    <NavigationProperty Name="RidePlannedTimes" Relationship="BForModel.FK_RidePlanned_RidePlannedTimes" FromRole="RidePlanned" ToRole="RidePlannedTimes" />
+    <NavigationProperty Name="t_CarType" Relationship="BForModel.FK_t_CarType_RidePlanned" FromRole="RidePlanned" ToRole="t_CarType" />
+    <NavigationProperty Name="t_Locations" Relationship="BForModel.FK_t_LocationDst_RidePlanned" FromRole="RidePlanned" ToRole="t_Locations" />
+    <NavigationProperty Name="t_Locations1" Relationship="BForModel.FK_t_LocationOrg_RidePlanned" FromRole="RidePlanned" ToRole="t_Locations" />
+    <NavigationProperty Name="t_RideType" Relationship="BForModel.FK_t_RideType_RidePlanned" FromRole="RidePlanned" ToRole="t_RideType" />
+  </EntityType>
+  <EntityType Name="RidePlannedCarLocation">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="CompanyCarPlatID" />
+      <PropertyRef Name="RidePlannedTimesID" />
+      <PropertyRef Name="RidePlannedLocationsID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedTimesID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedLocationsID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneCarLocationID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RideDoneCarLocation" Relationship="BForModel.FK_RideDoneCarLocations_RidePlannedCarLocations" FromRole="RidePlannedCarLocations" ToRole="RideDoneCarLocations" />
+    <NavigationProperty Name="RidePlannedCar" Relationship="BForModel.FK_RidePlannedCars_RidePlannedCarLocations" FromRole="RidePlannedCarLocations" ToRole="RidePlannedCars" />
+    <NavigationProperty Name="RidePlannedLocation" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedCarLocations" FromRole="RidePlannedCarLocations" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedTime" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedCarLocations" FromRole="RidePlannedCarLocations" ToRole="RidePlannedTimes" />
+  </EntityType>
+  <EntityType Name="RidePlannedCar">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CompanyCar" Relationship="BForModel.FK_CompanyCars_RidePlannedCars" FromRole="RidePlannedCars" ToRole="CompanyCars" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedCars" FromRole="RidePlannedCars" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedCarLocations" Relationship="BForModel.FK_RidePlannedCars_RidePlannedCarLocations" FromRole="RidePlannedCars" ToRole="RidePlannedCarLocations" />
+  </EntityType>
+  <EntityType Name="RidePlannedDriverLocation">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="CompanyDriverID" />
+      <PropertyRef Name="RidePlannedTimesID" />
+      <PropertyRef Name="RidePlannedLocationsID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedTimesID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedLocationsID" Type="Int32" Nullable="false" />
+    <Property Name="RideDoneDriverLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RideDoneDriverLocation" Relationship="BForModel.FK_RideDoneDriverLocations_RidePlannedDriverLocations" FromRole="RidePlannedDriverLocations" ToRole="RideDoneDriverLocations" />
+    <NavigationProperty Name="RidePlannedDriver" Relationship="BForModel.FK_RidePlannedDrivers_RidePlannedDriverLocations" FromRole="RidePlannedDriverLocations" ToRole="RidePlannedDrivers" />
+    <NavigationProperty Name="RidePlannedLocation" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedDriverLocations" FromRole="RidePlannedDriverLocations" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedTime" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedDriverLocations" FromRole="RidePlannedDriverLocations" ToRole="RidePlannedTimes" />
+  </EntityType>
+  <EntityType Name="RidePlannedDriver">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CompanyDriver" Relationship="BForModel.FK_CompanyDrivers_RidePlannedDrivers" FromRole="RidePlannedDrivers" ToRole="CompanyDrivers" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedDrivers" FromRole="RidePlannedDrivers" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedDriverLocations" Relationship="BForModel.FK_RidePlannedDrivers_RidePlannedDriverLocations" FromRole="RidePlannedDrivers" ToRole="RidePlannedDriverLocations" />
+  </EntityType>
+  <EntityType Name="RidePlannedLocation">
+    <Key>
+      <PropertyRef Name="RidePlannedLocationsID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedTimesID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedLocationsID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FromLocationID" Type="Int32" Nullable="false" />
+    <Property Name="ToLocationID" Type="Int32" Nullable="false" />
+    <Property Name="EstimatedRideMinutes" Type="Int32" Nullable="false" />
+    <Property Name="EstimatedRideCost" Type="Int32" Nullable="false" />
+    <Property Name="OnTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ServiceID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="RideDoneLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RideDoneLocation" Relationship="BForModel.FK_RideDoneLocations_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedCarLocations" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedCarLocations" FromRole="RidePlannedLocations" ToRole="RidePlannedCarLocations" />
+    <NavigationProperty Name="RidePlannedDriverLocations" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedDriverLocations" FromRole="RidePlannedLocations" ToRole="RidePlannedDriverLocations" />
+    <NavigationProperty Name="RidePlannedPassengerLocations" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedPassengerLocations" FromRole="RidePlannedLocations" ToRole="RidePlannedPassengerLocations" />
+    <NavigationProperty Name="RidePlannedTime" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="RidePlannedTimes" />
+    <NavigationProperty Name="t_Locations" Relationship="BForModel.FK_t_LocationFrom_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="t_Locations" />
+    <NavigationProperty Name="t_Locations1" Relationship="BForModel.FK_t_LocationTo_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="t_Locations" />
+    <NavigationProperty Name="t_Services" Relationship="BForModel.FK_t_Services_RidePlannedLocations" FromRole="RidePlannedLocations" ToRole="t_Services" />
+  </EntityType>
+  <EntityType Name="RidePlannedObjectPrice">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="RideObjectID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="RideObjectID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedObjectID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CustomerPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SupplierPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedObjectPrices" FromRole="RidePlannedObjectPrices" ToRole="RidePlanned" />
+    <NavigationProperty Name="t_RideObjects" Relationship="BForModel.FK_t_RideObjects_RidePlannedObjectPrices" FromRole="RidePlannedObjectPrices" ToRole="t_RideObjects" />
+  </EntityType>
+  <EntityType Name="RidePlannedPassengerCompany">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Percentage" Type="Double" Nullable="false" />
+    <Property Name="RideDonePassengerCompanyID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_RidePlannedPassengerCompany" FromRole="RidePlannedPassengerCompany" ToRole="Companies" />
+    <NavigationProperty Name="RideDonePassengerCompany" Relationship="BForModel.FK_RideDonePassengerCompany_RidePlannedPassengerCompany" FromRole="RidePlannedPassengerCompany" ToRole="RideDonePassengerCompany" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedPassengerCompany" FromRole="RidePlannedPassengerCompany" ToRole="RidePlanned" />
+  </EntityType>
+  <EntityType Name="RidePlannedPassengerLocation">
+    <Key>
+      <PropertyRef Name="RidePlannedID" />
+      <PropertyRef Name="RidePlannedTimesID" />
+      <PropertyRef Name="CompanyPassengerID" />
+      <PropertyRef Name="RidePlannedLocationsID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedTimesID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyPassengerID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedLocationsID" Type="Int32" Nullable="false" />
+    <Property Name="RideDonePassengerLocationsID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CompanyPassenger" Relationship="BForModel.FK_CompanyPassengers_RidePlannedPassengerLocations" FromRole="RidePlannedPassengerLocations" ToRole="CompanyPassengers" />
+    <NavigationProperty Name="RideDonePassengerLocation" Relationship="BForModel.FK_RideDonePassengerLocations_RidePlannedPassengerLocations" FromRole="RidePlannedPassengerLocations" ToRole="RideDonePassengerLocations" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedPassengerLocations" FromRole="RidePlannedPassengerLocations" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedLocation" Relationship="BForModel.FK_RidePlannedLocations_RidePlannedPassengerLocations" FromRole="RidePlannedPassengerLocations" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedTime" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedPassengerLocations" FromRole="RidePlannedPassengerLocations" ToRole="RidePlannedTimes" />
+  </EntityType>
+  <EntityType Name="RidePlannedTime">
+    <Key>
+      <PropertyRef Name="RidePlannedTimesID" />
+    </Key>
+    <Property Name="RidePlannedID" Type="Int32" Nullable="false" />
+    <Property Name="RidePlannedTimesID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FromTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="ToTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="CostFactor" Type="Double" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="RideDoneID" Type="Int32" />
+    <NavigationProperty Name="RideDone" Relationship="BForModel.FK_RideDone_RidePlannedTimes" FromRole="RidePlannedTimes" ToRole="RideDone" />
+    <NavigationProperty Name="RidePlanned" Relationship="BForModel.FK_RidePlanned_RidePlannedTimes" FromRole="RidePlannedTimes" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedCarLocations" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedCarLocations" FromRole="RidePlannedTimes" ToRole="RidePlannedCarLocations" />
+    <NavigationProperty Name="RidePlannedDriverLocations" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedDriverLocations" FromRole="RidePlannedTimes" ToRole="RidePlannedDriverLocations" />
+    <NavigationProperty Name="RidePlannedLocations" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedLocations" FromRole="RidePlannedTimes" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedPassengerLocations" Relationship="BForModel.FK_RidePlannedTimes_RidePlannedPassengerLocations" FromRole="RidePlannedTimes" ToRole="RidePlannedPassengerLocations" />
+  </EntityType>
+  <EntityType Name="t_CarBrands">
+    <Key>
+      <PropertyRef Name="CarBrandID" />
+    </Key>
+    <Property Name="CarBrandID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CarManufacturer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BrandName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModelName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CarTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cars" Relationship="BForModel.FK_CarBrands_Cars" FromRole="t_CarBrands" ToRole="Cars" />
+    <NavigationProperty Name="t_CarType" Relationship="BForModel.FK_t_CarType_CarBrands" FromRole="t_CarBrands" ToRole="t_CarType" />
+  </EntityType>
+  <EntityType Name="t_CarGroups">
+    <Key>
+      <PropertyRef Name="CarGroupID" />
+    </Key>
+    <Property Name="CarGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyCars" Relationship="BForModel.FK_t_CarGroup_CompanyCars" FromRole="t_CarGroups" ToRole="CompanyCars" />
+    <NavigationProperty Name="Companies" Relationship="BForModel.CompanyCarGroups" FromRole="t_CarGroups" ToRole="Companies" />
+  </EntityType>
+  <EntityType Name="t_CarType">
+    <Key>
+      <PropertyRef Name="CarTypeID" />
+    </Key>
+    <Property Name="CarTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PassengersCapacity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RidePlanneds" Relationship="BForModel.FK_t_CarType_RidePlanned" FromRole="t_CarType" ToRole="RidePlanned" />
+    <NavigationProperty Name="t_CarBrands" Relationship="BForModel.FK_t_CarType_CarBrands" FromRole="t_CarType" ToRole="t_CarBrands" />
+    <NavigationProperty Name="t_LicenseType" Relationship="BForModel.t_CarTypeLicenseType" FromRole="t_CarType" ToRole="t_LicenseType" />
+  </EntityType>
+  <EntityType Name="t_CompanyType">
+    <Key>
+      <PropertyRef Name="CompanyTypeID" />
+    </Key>
+    <Property Name="CompanyTypeID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyTypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EntityTypeIDs" Type="Int32" />
+    <NavigationProperty Name="Companies" Relationship="BForModel.FK_t_CompanyType_Companies" FromRole="t_CompanyType" ToRole="Companies" />
+  </EntityType>
+  <EntityType Name="t_ContactType">
+    <Key>
+      <PropertyRef Name="ContactTypeID" />
+    </Key>
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ContactTypeCode" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ContactTypeDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyCustomerContacts" Relationship="BForModel.FK_t_ContactType_CompanyCustomerContacts" FromRole="t_ContactType" ToRole="CompanyCustomerContacts" />
+    <NavigationProperty Name="CompanySupplierContacts" Relationship="BForModel.FK_t_ContactType_CompanySupplierContacts" FromRole="t_ContactType" ToRole="CompanySupplierContacts" />
+    <NavigationProperty Name="UserContactTypes" Relationship="BForModel.FK_t_ContactTypes_UserContactTypes" FromRole="t_ContactType" ToRole="UserContactTypes" />
+  </EntityType>
+  <EntityType Name="t_CustomerGroups">
+    <Key>
+      <PropertyRef Name="CustomerGroupID" />
+    </Key>
+    <Property Name="CustomerGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupCode" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyCustomerGroups" Relationship="BForModel.FK_CustomerGroups_CompanyCustomerGroups" FromRole="t_CustomerGroups" ToRole="CompanyCustomerGroups" />
+  </EntityType>
+  <EntityType Name="t_DriverGroups">
+    <Key>
+      <PropertyRef Name="DriverGroupID" />
+    </Key>
+    <Property Name="DriverGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyDrivers" Relationship="BForModel.FK_t_DriverGroups_CompanyDrivers" FromRole="t_DriverGroups" ToRole="CompanyDrivers" />
+  </EntityType>
+  <EntityType Name="t_DriverType">
+    <Key>
+      <PropertyRef Name="DriverTypeID" />
+    </Key>
+    <Property Name="DriverTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Drivers" Relationship="BForModel.DriverTypes" FromRole="t_DriverType" ToRole="Drivers" />
+  </EntityType>
+  <EntityType Name="t_EntityType">
+    <Key>
+      <PropertyRef Name="EntityTypeID" />
+    </Key>
+    <Property Name="EntityTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="EntityName" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ByteRepresent" Type="Int32" p1:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="t_Items">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="t_Roles" Relationship="BForModel.t_RoleItems" FromRole="t_Items" ToRole="t_Roles" />
+  </EntityType>
+  <EntityType Name="t_Languages">
+    <Key>
+      <PropertyRef Name="LanguageID" />
+    </Key>
+    <Property Name="LanguageID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="BForModel.FK_t_Languages_Users" FromRole="t_Languages" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="t_LicenseType">
+    <Key>
+      <PropertyRef Name="LincenseTypeID" />
+    </Key>
+    <Property Name="LincenseTypeID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="DriverLicenses" Relationship="BForModel.FK_t_LicenseType_DriverLicenses" FromRole="t_LicenseType" ToRole="DriverLicenses" />
+    <NavigationProperty Name="t_CarType" Relationship="BForModel.t_CarTypeLicenseType" FromRole="t_LicenseType" ToRole="t_CarType" />
+  </EntityType>
+  <EntityType Name="t_Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationGpsNDecimalCrdnt" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="LocationGpsEDecimalCrdnt" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="LocationDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="RideDoneLocations" Relationship="BForModel.FK_t_LocationFrom_RideDoneLocations" FromRole="t_Locations" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RideDoneLocations1" Relationship="BForModel.FK_t_LocationTo_RideDoneLocations" FromRole="t_Locations" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RidePlanneds" Relationship="BForModel.FK_t_LocationDst_RidePlanned" FromRole="t_Locations" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlanneds1" Relationship="BForModel.FK_t_LocationOrg_RidePlanned" FromRole="t_Locations" ToRole="RidePlanned" />
+    <NavigationProperty Name="RidePlannedLocations" Relationship="BForModel.FK_t_LocationFrom_RidePlannedLocations" FromRole="t_Locations" ToRole="RidePlannedLocations" />
+    <NavigationProperty Name="RidePlannedLocations1" Relationship="BForModel.FK_t_LocationTo_RidePlannedLocations" FromRole="t_Locations" ToRole="RidePlannedLocations" />
+  </EntityType>
+  <EntityType Name="t_NotifyBy">
+    <Key>
+      <PropertyRef Name="NotifyByID" />
+    </Key>
+    <Property Name="NotifyByID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NotifyByDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyUsers" Relationship="BForModel.FK_t_NotifyBy_CompanyUsers" FromRole="t_NotifyBy" ToRole="CompanyUsers" />
+  </EntityType>
+  <EntityType Name="t_NotifyByTiming">
+    <Key>
+      <PropertyRef Name="NotifyByTimingID" />
+    </Key>
+    <Property Name="NotifyByTimingID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NotifyByTimingDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyUsers" Relationship="BForModel.FK_t_NotifyByTiming_CompanyUsers" FromRole="t_NotifyByTiming" ToRole="CompanyUsers" />
+  </EntityType>
+  <EntityType Name="t_NotifyType">
+    <Key>
+      <PropertyRef Name="NotifyTypeID" />
+    </Key>
+    <Property Name="NotifyTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NotifyTypeDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ByteRepresent" Type="Int32" p1:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="t_Parts">
+    <Key>
+      <PropertyRef Name="PartID" />
+    </Key>
+    <Property Name="PartID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyParts" Relationship="BForModel.FK_Parts_CompanyParts" FromRole="t_Parts" ToRole="CompanyParts" />
+  </EntityType>
+  <EntityType Name="t_PassengerGroups">
+    <Key>
+      <PropertyRef Name="PassengerGroupID" />
+    </Key>
+    <Property Name="PassengerGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyPassengerGroups" Relationship="BForModel.FK_PassengerGroups_CompanyPassengerGroups1" FromRole="t_PassengerGroups" ToRole="CompanyPassengerGroups" />
+  </EntityType>
+  <EntityType Name="t_RideObjects">
+    <Key>
+      <PropertyRef Name="RideObjectID" />
+    </Key>
+    <Property Name="RideObjectID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideObjectDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="RidePlannedObjectPrices" Relationship="BForModel.FK_t_RideObjects_RidePlannedObjectPrices" FromRole="t_RideObjects" ToRole="RidePlannedObjectPrices" />
+  </EntityType>
+  <EntityType Name="t_RideType">
+    <Key>
+      <PropertyRef Name="RideTypeID" />
+    </Key>
+    <Property Name="RideTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RideCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Desc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="RidePlanneds" Relationship="BForModel.FK_t_RideType_RidePlanned" FromRole="t_RideType" ToRole="RidePlanned" />
+  </EntityType>
+  <EntityType Name="t_Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CompanyUsers" Relationship="BForModel.FK_Roles_CompanyUsers" FromRole="t_Roles" ToRole="CompanyUsers" />
+    <NavigationProperty Name="t_Items" Relationship="BForModel.t_RoleItems" FromRole="t_Roles" ToRole="t_Items" />
+  </EntityType>
+  <EntityType Name="t_Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyServicePrices" Relationship="BForModel.FK_t_Services_CompanyServicePrices" FromRole="t_Services" ToRole="CompanyServicePrices" />
+    <NavigationProperty Name="RideDoneLocations" Relationship="BForModel.FK_t_Services_TravelDoneLocations" FromRole="t_Services" ToRole="RideDoneLocations" />
+    <NavigationProperty Name="RidePlannedLocations" Relationship="BForModel.FK_t_Services_RidePlannedLocations" FromRole="t_Services" ToRole="RidePlannedLocations" />
+  </EntityType>
+  <EntityType Name="t_SupplierGroups">
+    <Key>
+      <PropertyRef Name="SupplierGroupID" />
+    </Key>
+    <Property Name="SupplierGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanySupplierGroups" Relationship="BForModel.FK_t_SupplierGroups_CompanySupplierGroups" FromRole="t_SupplierGroups" ToRole="CompanySupplierGroups" />
+  </EntityType>
+  <EntityType Name="Technician">
+    <Key>
+      <PropertyRef Name="TechnicianID" />
+    </Key>
+    <Property Name="TechnicianID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CompanyTechnicians" Relationship="BForModel.FK_Technicians_CompanyTechnicians" FromRole="Technicians" ToRole="CompanyTechnicians" />
+  </EntityType>
+  <EntityType Name="UserContactType">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ContactTypeID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CompanyCustomerContacts" Relationship="BForModel.FK_UserContactTypes_CompanyCustomerContacts" FromRole="UserContactTypes" ToRole="CompanyCustomerContacts" />
+    <NavigationProperty Name="t_ContactType" Relationship="BForModel.FK_t_ContactTypes_UserContactTypes" FromRole="UserContactTypes" ToRole="t_ContactType" />
+    <NavigationProperty Name="User" Relationship="BForModel.FK_Users_UserContactTypes" FromRole="UserContactTypes" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LanguageID" Type="Int32" Nullable="false" />
+    <Property Name="MainCompanyID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="BForModel.FK_Companies_Users" FromRole="Users" ToRole="Companies" />
+    <NavigationProperty Name="CompanyCustomerContacts" Relationship="BForModel.FK_Users_CompanyCustomerContacts" FromRole="Users" ToRole="CompanyCustomerContacts" />
+    <NavigationProperty Name="CompanyUsers" Relationship="BForModel.FK_Users_CompanyUsers" FromRole="Users" ToRole="CompanyUsers" />
+    <NavigationProperty Name="t_Languages" Relationship="BForModel.FK_t_Languages_Users" FromRole="Users" ToRole="t_Languages" />
+    <NavigationProperty Name="UserContactTypes" Relationship="BForModel.FK_Users_UserContactTypes" FromRole="Users" ToRole="UserContactTypes" />
+  </EntityType>
+  <Association Name="FK_CarBrands_Cars">
+    <End Role="t_CarBrands" Type="BForModel.t_CarBrands" Multiplicity="1" />
+    <End Role="Cars" Type="BForModel.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarBrands">
+        <PropertyRef Name="CarBrandID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="BrandModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cars_ComapyCars">
+    <End Role="Cars" Type="BForModel.Car" Multiplicity="1" />
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="PlateNo" />
+      </Principal>
+      <Dependent Role="CompanyCars">
+        <PropertyRef Name="CarPlatNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comapies_ComapyCars">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyCars">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyCustomerGroups">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyCustomerGroups" Type="BForModel.CompanyCustomerGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerGroups">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyDrivers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyParts">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyParts" Type="BForModel.CompanyPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyParts">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyPassengerGroups">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyPassengerGroups" Type="BForModel.CompanyPassengerGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyPassengerGroups">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyPassengers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyPeriodTimes">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyPeriodTimes" Type="BForModel.CompanyPeriodTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyPeriodTimes">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyServicePrices">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyServicePrices" Type="BForModel.CompanyServicePrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyServicePrices">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanySupplierGroups">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanySupplierGroups" Type="BForModel.CompanySupplierGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanySupplierGroups">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyTechnicians">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyTechnicians" Type="BForModel.CompanyTechnician" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyTechnicians">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_RideDonePassengerCompany1">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="RideDonePassengerCompany" Type="BForModel.RideDonePassengerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="RideDonePassengerCompany">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_RidePlanned">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="OriginCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_RidePlannedPassengerCompany">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="RidePlannedPassengerCompany" Type="BForModel.RidePlannedPassengerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerCompany">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_Users">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="Users" Type="BForModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="MainCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompaniesA_CompanyCustomers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyCustomers" Type="BForModel.CompanyCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyCustomers">
+        <PropertyRef Name="CompanyAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompaniesA_CompanySuppliers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanySuppliers" Type="BForModel.CompanySupplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanySuppliers">
+        <PropertyRef Name="CompanyAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompaniesB_CompanyCustomers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyCustomers" Type="BForModel.CompanyCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyCustomers">
+        <PropertyRef Name="CompanyBID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompaniesB_CompanySuppliers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanySuppliers" Type="BForModel.CompanySupplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanySuppliers">
+        <PropertyRef Name="CompanyBID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_CompanyUsers">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="1" />
+    <End Role="CompanyUsers" Type="BForModel.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyUsers">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CompanyType_Companies">
+    <End Role="t_CompanyType" Type="BForModel.t_CompanyType" Multiplicity="0..1" />
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CompanyType">
+        <PropertyRef Name="CompanyTypeID" />
+      </Principal>
+      <Dependent Role="Companies">
+        <PropertyRef Name="CompanyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCarPlat_RideDoneCars">
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="1" />
+    <End Role="RideDoneCars" Type="BForModel.RideDoneCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="RideDoneCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCars_CompanyDrivers">
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="MainCompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCars_RidePlannedCars">
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="1" />
+    <End Role="RidePlannedCars" Type="BForModel.RidePlannedCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="RidePlannedCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CarGroup_CompanyCars">
+    <End Role="t_CarGroups" Type="BForModel.t_CarGroups" Multiplicity="1" />
+    <End Role="CompanyCars" Type="BForModel.CompanyCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarGroups">
+        <PropertyRef Name="CarGroupID" />
+      </Principal>
+      <Dependent Role="CompanyCars">
+        <PropertyRef Name="CarGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCustomers_CompanyCustomerContacts">
+    <End Role="CompanyCustomers" Type="BForModel.CompanyCustomer" Multiplicity="1" />
+    <End Role="CompanyCustomerContacts" Type="BForModel.CompanyCustomerContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCustomers">
+        <PropertyRef Name="CompanyCustomerID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerContacts">
+        <PropertyRef Name="CompanyCustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_ContactType_CompanyCustomerContacts">
+    <End Role="t_ContactType" Type="BForModel.t_ContactType" Multiplicity="1" />
+    <End Role="CompanyCustomerContacts" Type="BForModel.CompanyCustomerContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_ContactType">
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerContacts">
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserContactTypes_CompanyCustomerContacts">
+    <End Role="UserContactTypes" Type="BForModel.UserContactType" Multiplicity="1" />
+    <End Role="CompanyCustomerContacts" Type="BForModel.CompanyCustomerContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserContactTypes">
+        <PropertyRef Name="UserID" />
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerContacts">
+        <PropertyRef Name="UserID" />
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_CompanyCustomerContacts">
+    <End Role="Users" Type="BForModel.User" Multiplicity="1" />
+    <End Role="CompanyCustomerContacts" Type="BForModel.CompanyCustomerContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerContacts">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCustomerGroups_CompanyCustomers">
+    <End Role="CompanyCustomerGroups" Type="BForModel.CompanyCustomerGroup" Multiplicity="1" />
+    <End Role="CompanyCustomers" Type="BForModel.CompanyCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCustomerGroups">
+        <PropertyRef Name="CompanyID" />
+        <PropertyRef Name="CustomerGroupID" />
+      </Principal>
+      <Dependent Role="CompanyCustomers">
+        <PropertyRef Name="CompanyAID" />
+        <PropertyRef Name="CustometrGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerGroups_CompanyCustomerGroups">
+    <End Role="t_CustomerGroups" Type="BForModel.t_CustomerGroups" Multiplicity="1" />
+    <End Role="CompanyCustomerGroups" Type="BForModel.CompanyCustomerGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CustomerGroups">
+        <PropertyRef Name="CustomerGroupID" />
+      </Principal>
+      <Dependent Role="CompanyCustomerGroups">
+        <PropertyRef Name="CustomerGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyDrivers_RideDoneDrivers">
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="1" />
+    <End Role="RideDoneDrivers" Type="BForModel.RideDoneDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="RideDoneDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyDrivers_RidePlannedDrivers">
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="1" />
+    <End Role="RidePlannedDrivers" Type="BForModel.RidePlannedDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="RidePlannedDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_CompanyDrivers">
+    <End Role="Drivers" Type="BForModel.Driver" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_DriverGroups_CompanyDrivers">
+    <End Role="t_DriverGroups" Type="BForModel.t_DriverGroups" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.CompanyDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_DriverGroups">
+        <PropertyRef Name="DriverGroupID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="DriverGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parts_CompanyParts">
+    <End Role="t_Parts" Type="BForModel.t_Parts" Multiplicity="1" />
+    <End Role="CompanyParts" Type="BForModel.CompanyPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Parts">
+        <PropertyRef Name="PartID" />
+      </Principal>
+      <Dependent Role="CompanyParts">
+        <PropertyRef Name="PartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyPassengerGroup_CompanyPassengers">
+    <End Role="CompanyPassengerGroups" Type="BForModel.CompanyPassengerGroup" Multiplicity="1" />
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengerGroups">
+        <PropertyRef Name="CompanyID" />
+        <PropertyRef Name="PassengerGroupID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers">
+        <PropertyRef Name="CompanyID" />
+        <PropertyRef Name="PassengerGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PassengerGroups_CompanyPassengerGroups1">
+    <End Role="t_PassengerGroups" Type="BForModel.t_PassengerGroups" Multiplicity="1" />
+    <End Role="CompanyPassengerGroups" Type="BForModel.CompanyPassengerGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_PassengerGroups">
+        <PropertyRef Name="PassengerGroupID" />
+      </Principal>
+      <Dependent Role="CompanyPassengerGroups">
+        <PropertyRef Name="PassengerGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComapnyPassengers_RideDonePassengers">
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="1" />
+    <End Role="RideDonePassengerLocations" Type="BForModel.RideDonePassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Principal>
+      <Dependent Role="RideDonePassengerLocations">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyPassengers_RidePlannedPassengerLocations">
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="1" />
+    <End Role="RidePlannedPassengerLocations" Type="BForModel.RidePlannedPassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerLocations">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passengers_CompanyPassengers">
+    <End Role="Passengers" Type="BForModel.Passenger" Multiplicity="1" />
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers">
+        <PropertyRef Name="PassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_PassengerGroups_CompanyPassengers">
+    <End Role="CompanyPassengers" Type="BForModel.CompanyPassenger" Multiplicity="1" />
+    <End Role="CompanyPassengers1" Type="BForModel.CompanyPassenger" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers1">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PeriodTimes_CompanyPeriodTimes">
+    <End Role="PeriodTimes" Type="BForModel.PeriodTime" Multiplicity="1" />
+    <End Role="CompanyPeriodTimes" Type="BForModel.CompanyPeriodTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PeriodTimes">
+        <PropertyRef Name="PeriodID" />
+        <PropertyRef Name="Date" />
+      </Principal>
+      <Dependent Role="CompanyPeriodTimes">
+        <PropertyRef Name="PeriodID" />
+        <PropertyRef Name="Date" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_Services_CompanyServicePrices">
+    <End Role="t_Services" Type="BForModel.t_Services" Multiplicity="1" />
+    <End Role="CompanyServicePrices" Type="BForModel.CompanyServicePrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="CompanyServicePrices">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanySuppliers_CompanySupplierContacts">
+    <End Role="CompanySuppliers" Type="BForModel.CompanySupplier" Multiplicity="1" />
+    <End Role="CompanySupplierContacts" Type="BForModel.CompanySupplierContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanySuppliers">
+        <PropertyRef Name="CompanySupplierID" />
+      </Principal>
+      <Dependent Role="CompanySupplierContacts">
+        <PropertyRef Name="CompanySupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_ContactType_CompanySupplierContacts">
+    <End Role="t_ContactType" Type="BForModel.t_ContactType" Multiplicity="1" />
+    <End Role="CompanySupplierContacts" Type="BForModel.CompanySupplierContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_ContactType">
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="CompanySupplierContacts">
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanySupplierGroups_CompanySuppliers">
+    <End Role="CompanySupplierGroups" Type="BForModel.CompanySupplierGroup" Multiplicity="1" />
+    <End Role="CompanySuppliers" Type="BForModel.CompanySupplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanySupplierGroups">
+        <PropertyRef Name="CompanyID" />
+        <PropertyRef Name="SupplierGroupID" />
+      </Principal>
+      <Dependent Role="CompanySuppliers">
+        <PropertyRef Name="CompanyAID" />
+        <PropertyRef Name="SupplierGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_SupplierGroups_CompanySupplierGroups">
+    <End Role="t_SupplierGroups" Type="BForModel.t_SupplierGroups" Multiplicity="1" />
+    <End Role="CompanySupplierGroups" Type="BForModel.CompanySupplierGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_SupplierGroups">
+        <PropertyRef Name="SupplierGroupID" />
+      </Principal>
+      <Dependent Role="CompanySupplierGroups">
+        <PropertyRef Name="SupplierGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Technicians_CompanyTechnicians">
+    <End Role="Technicians" Type="BForModel.Technician" Multiplicity="1" />
+    <End Role="CompanyTechnicians" Type="BForModel.CompanyTechnician" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technicians">
+        <PropertyRef Name="TechnicianID" />
+      </Principal>
+      <Dependent Role="CompanyTechnicians">
+        <PropertyRef Name="TechnicianID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_CompanyUsers">
+    <End Role="t_Roles" Type="BForModel.t_Roles" Multiplicity="1" />
+    <End Role="CompanyUsers" Type="BForModel.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="CompanyUsers">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_NotifyBy_CompanyUsers">
+    <End Role="t_NotifyBy" Type="BForModel.t_NotifyBy" Multiplicity="0..1" />
+    <End Role="CompanyUsers" Type="BForModel.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_NotifyBy">
+        <PropertyRef Name="NotifyByID" />
+      </Principal>
+      <Dependent Role="CompanyUsers">
+        <PropertyRef Name="NotifyBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_NotifyByTiming_CompanyUsers">
+    <End Role="t_NotifyByTiming" Type="BForModel.t_NotifyByTiming" Multiplicity="0..1" />
+    <End Role="CompanyUsers" Type="BForModel.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_NotifyByTiming">
+        <PropertyRef Name="NotifyByTimingID" />
+      </Principal>
+      <Dependent Role="CompanyUsers">
+        <PropertyRef Name="NotifyByTiming" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_CompanyUsers">
+    <End Role="Users" Type="BForModel.User" Multiplicity="1" />
+    <End Role="CompanyUsers" Type="BForModel.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CompanyUsers">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_DriverLicenses">
+    <End Role="Drivers" Type="BForModel.Driver" Multiplicity="1" />
+    <End Role="DriverLicenses" Type="BForModel.DriverLicens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="DriverLicenses">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LicenseType_DriverLicenses">
+    <End Role="t_LicenseType" Type="BForModel.t_LicenseType" Multiplicity="1" />
+    <End Role="DriverLicenses" Type="BForModel.DriverLicens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_LicenseType">
+        <PropertyRef Name="LincenseTypeID" />
+      </Principal>
+      <Dependent Role="DriverLicenses">
+        <PropertyRef Name="LicenseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Periods_PeriodTimes">
+    <End Role="Periods" Type="BForModel.Period" Multiplicity="1" />
+    <End Role="PeriodTimes" Type="BForModel.PeriodTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periods">
+        <PropertyRef Name="PeriodID" />
+      </Principal>
+      <Dependent Role="PeriodTimes">
+        <PropertyRef Name="PeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Periods_RidePlanned">
+    <End Role="Periods" Type="BForModel.Period" Multiplicity="0..1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periods">
+        <PropertyRef Name="PeriodID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="PeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RideDoneCars">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="1" />
+    <End Role="RideDoneCars" Type="BForModel.RideDoneCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RideDoneCars">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RideDoneDrivers">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="1" />
+    <End Role="RideDoneDrivers" Type="BForModel.RideDoneDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RideDoneDrivers">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RideDoneLocations">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="1" />
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RideDoneLocations">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RideDonePassengerCompany">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="1" />
+    <End Role="RideDonePassengerCompany" Type="BForModel.RideDonePassengerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RideDonePassengerCompany">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RideDonePassengers">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="1" />
+    <End Role="RideDonePassengerLocations" Type="BForModel.RideDonePassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RideDonePassengerLocations">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDone_RidePlannedTimes">
+    <End Role="RideDone" Type="BForModel.RideDone" Multiplicity="0..1" />
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDone">
+        <PropertyRef Name="RideDoneID" />
+      </Principal>
+      <Dependent Role="RidePlannedTimes">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneCarLocations_RidePlannedCarLocations">
+    <End Role="RideDoneCarLocations" Type="BForModel.RideDoneCarLocation" Multiplicity="1" />
+    <End Role="RidePlannedCarLocations" Type="BForModel.RidePlannedCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneCarLocations">
+        <PropertyRef Name="RideDoneCarLocationID" />
+      </Principal>
+      <Dependent Role="RidePlannedCarLocations">
+        <PropertyRef Name="RideDoneCarLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneCars_RideDoneCarLocations">
+    <End Role="RideDoneCars" Type="BForModel.RideDoneCar" Multiplicity="1" />
+    <End Role="RideDoneCarLocations" Type="BForModel.RideDoneCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneCars">
+        <PropertyRef Name="RideDoneID" />
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="RideDoneCarLocations">
+        <PropertyRef Name="RideDoneID" />
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneLocations_RideDoneCarLocations">
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="1" />
+    <End Role="RideDoneCarLocations" Type="BForModel.RideDoneCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Principal>
+      <Dependent Role="RideDoneCarLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneDriverLocations_RidePlannedDriverLocations">
+    <End Role="RideDoneDriverLocations" Type="BForModel.RideDoneDriverLocation" Multiplicity="1" />
+    <End Role="RidePlannedDriverLocations" Type="BForModel.RidePlannedDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneDriverLocations">
+        <PropertyRef Name="RideDoneDriverLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedDriverLocations">
+        <PropertyRef Name="RideDoneDriverLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneDrivers_RideDoneDriverLocations">
+    <End Role="RideDoneDrivers" Type="BForModel.RideDoneDriver" Multiplicity="1" />
+    <End Role="RideDoneDriverLocations" Type="BForModel.RideDoneDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneDrivers">
+        <PropertyRef Name="RideDoneID" />
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="RideDoneDriverLocations">
+        <PropertyRef Name="RideDoneID" />
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneLocations_RideDoneDriverLocations1">
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="1" />
+    <End Role="RideDoneDriverLocations" Type="BForModel.RideDoneDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Principal>
+      <Dependent Role="RideDoneDriverLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneLocations_RideDonePassengers">
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="1" />
+    <End Role="RideDonePassengerLocations" Type="BForModel.RideDonePassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Principal>
+      <Dependent Role="RideDonePassengerLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDoneLocations_RidePlannedLocations">
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDoneLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="RideDoneLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_RideDoneLocations">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RideDoneLocations">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_RideDoneLocations">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RideDoneLocations">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_Services_TravelDoneLocations">
+    <End Role="t_Services" Type="BForModel.t_Services" Multiplicity="1" />
+    <End Role="RideDoneLocations" Type="BForModel.RideDoneLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="RideDoneLocations">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDonePassengerCompany_RidePlannedPassengerCompany">
+    <End Role="RideDonePassengerCompany" Type="BForModel.RideDonePassengerCompany" Multiplicity="1" />
+    <End Role="RidePlannedPassengerCompany" Type="BForModel.RidePlannedPassengerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDonePassengerCompany">
+        <PropertyRef Name="RideDonePassengerCompanyID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerCompany">
+        <PropertyRef Name="RideDonePassengerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RideDonePassengerLocations_RidePlannedPassengerLocations">
+    <End Role="RideDonePassengerLocations" Type="BForModel.RideDonePassengerLocation" Multiplicity="1" />
+    <End Role="RidePlannedPassengerLocations" Type="BForModel.RidePlannedPassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RideDonePassengerLocations">
+        <PropertyRef Name="RideDonePassengerLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerLocations">
+        <PropertyRef Name="RideDonePassengerLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedCars">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedCars" Type="BForModel.RidePlannedCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedCars">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedDrivers">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedDrivers" Type="BForModel.RidePlannedDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedDrivers">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedLocations">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedObjectPrices">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedObjectPrices" Type="BForModel.RidePlannedObjectPrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedObjectPrices">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedPassengerCompany">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedPassengerCompany" Type="BForModel.RidePlannedPassengerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerCompany">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedPassengerLocations">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="1" />
+    <End Role="RidePlannedPassengerLocations" Type="BForModel.RidePlannedPassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerLocations">
+        <PropertyRef Name="RidePlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlanned_RidePlannedTimes">
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="0..1" />
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlanned">
+        <PropertyRef Name="RidePlannedID" />
+      </Principal>
+      <Dependent Role="RidePlannedTimes">
+        <PropertyRef Name="RideDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CarType_RidePlanned">
+    <End Role="t_CarType" Type="BForModel.t_CarType" Multiplicity="0..1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarType">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationDst_RidePlanned">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="DestinationLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationOrg_RidePlanned">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="OriginLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_RideType_RidePlanned">
+    <End Role="t_RideType" Type="BForModel.t_RideType" Multiplicity="0..1" />
+    <End Role="RidePlanned" Type="BForModel.RidePlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_RideType">
+        <PropertyRef Name="RideTypeID" />
+      </Principal>
+      <Dependent Role="RidePlanned">
+        <PropertyRef Name="RideTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedCars_RidePlannedCarLocations">
+    <End Role="RidePlannedCars" Type="BForModel.RidePlannedCar" Multiplicity="1" />
+    <End Role="RidePlannedCarLocations" Type="BForModel.RidePlannedCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedCars">
+        <PropertyRef Name="RidePlannedID" />
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="RidePlannedCarLocations">
+        <PropertyRef Name="RidePlannedID" />
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedLocations_RidePlannedCarLocations">
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="1" />
+    <End Role="RidePlannedCarLocations" Type="BForModel.RidePlannedCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedCarLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedTimes_RidePlannedCarLocations">
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="1" />
+    <End Role="RidePlannedCarLocations" Type="BForModel.RidePlannedCarLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedTimes">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Principal>
+      <Dependent Role="RidePlannedCarLocations">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedDrivers_RidePlannedDriverLocations">
+    <End Role="RidePlannedDrivers" Type="BForModel.RidePlannedDriver" Multiplicity="1" />
+    <End Role="RidePlannedDriverLocations" Type="BForModel.RidePlannedDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedDrivers">
+        <PropertyRef Name="RidePlannedID" />
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="RidePlannedDriverLocations">
+        <PropertyRef Name="RidePlannedID" />
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedLocations_RidePlannedDriverLocations">
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="1" />
+    <End Role="RidePlannedDriverLocations" Type="BForModel.RidePlannedDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedDriverLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedTimes_RidePlannedDriverLocations">
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="1" />
+    <End Role="RidePlannedDriverLocations" Type="BForModel.RidePlannedDriverLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedTimes">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Principal>
+      <Dependent Role="RidePlannedDriverLocations">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedLocations_RidePlannedPassengerLocations">
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="1" />
+    <End Role="RidePlannedPassengerLocations" Type="BForModel.RidePlannedPassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerLocations">
+        <PropertyRef Name="RidePlannedLocationsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedTimes_RidePlannedLocations">
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedTimes">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_RidePlannedLocations">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_RidePlannedLocations">
+    <End Role="t_Locations" Type="BForModel.t_Locations" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_Services_RidePlannedLocations">
+    <End Role="t_Services" Type="BForModel.t_Services" Multiplicity="1" />
+    <End Role="RidePlannedLocations" Type="BForModel.RidePlannedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="RidePlannedLocations">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_RideObjects_RidePlannedObjectPrices">
+    <End Role="t_RideObjects" Type="BForModel.t_RideObjects" Multiplicity="1" />
+    <End Role="RidePlannedObjectPrices" Type="BForModel.RidePlannedObjectPrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_RideObjects">
+        <PropertyRef Name="RideObjectID" />
+      </Principal>
+      <Dependent Role="RidePlannedObjectPrices">
+        <PropertyRef Name="RideObjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RidePlannedTimes_RidePlannedPassengerLocations">
+    <End Role="RidePlannedTimes" Type="BForModel.RidePlannedTime" Multiplicity="1" />
+    <End Role="RidePlannedPassengerLocations" Type="BForModel.RidePlannedPassengerLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RidePlannedTimes">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Principal>
+      <Dependent Role="RidePlannedPassengerLocations">
+        <PropertyRef Name="RidePlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CarType_CarBrands">
+    <End Role="t_CarType" Type="BForModel.t_CarType" Multiplicity="1" />
+    <End Role="t_CarBrands" Type="BForModel.t_CarBrands" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarType">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="t_CarBrands">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_ContactTypes_UserContactTypes">
+    <End Role="t_ContactType" Type="BForModel.t_ContactType" Multiplicity="1" />
+    <End Role="UserContactTypes" Type="BForModel.UserContactType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_ContactType">
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="UserContactTypes">
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_Languages_Users">
+    <End Role="t_Languages" Type="BForModel.t_Languages" Multiplicity="1" />
+    <End Role="Users" Type="BForModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Languages">
+        <PropertyRef Name="LanguageID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserContactTypes">
+    <End Role="Users" Type="BForModel.User" Multiplicity="1" />
+    <End Role="UserContactTypes" Type="BForModel.UserContactType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserContactTypes">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CompanyCarGroups">
+    <End Role="Companies" Type="BForModel.Company" Multiplicity="*" />
+    <End Role="t_CarGroups" Type="BForModel.t_CarGroups" Multiplicity="*" />
+  </Association>
+  <Association Name="DriverTypes">
+    <End Role="Drivers" Type="BForModel.Driver" Multiplicity="*" />
+    <End Role="t_DriverType" Type="BForModel.t_DriverType" Multiplicity="*" />
+  </Association>
+  <Association Name="t_CarTypeLicenseType">
+    <End Role="t_CarType" Type="BForModel.t_CarType" Multiplicity="*" />
+    <End Role="t_LicenseType" Type="BForModel.t_LicenseType" Multiplicity="*" />
+  </Association>
+  <Association Name="t_RoleItems">
+    <End Role="t_Items" Type="BForModel.t_Items" Multiplicity="*" />
+    <End Role="t_Roles" Type="BForModel.t_Roles" Multiplicity="*" />
+  </Association>
+</Schema>

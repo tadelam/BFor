@@ -1,0 +1,1187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BForModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BForModelStoreContainer">
+    <EntitySet Name="Cars" EntityType="BForModel.Store.Cars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComapyCars" EntityType="BForModel.Store.ComapyCars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Companies" EntityType="BForModel.Store.Companies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CompanyDrivers" EntityType="BForModel.Store.CompanyDrivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CompanyPassengers" EntityType="BForModel.Store.CompanyPassengers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DriverLicenses" EntityType="BForModel.Store.DriverLicenses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Drivers" EntityType="BForModel.Store.Drivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DriverTypes" EntityType="BForModel.Store.DriverTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Passengers" EntityType="BForModel.Store.Passengers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Periods" EntityType="BForModel.Store.Periods" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PeriodTimes" EntityType="BForModel.Store.PeriodTimes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Suppliers" EntityType="BForModel.Store.Suppliers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SupplyParts" EntityType="BForModel.Store.SupplyParts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_CarBrands" EntityType="BForModel.Store.t_CarBrands" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_CarType" EntityType="BForModel.Store.t_CarType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_CarTypeLicenseType" EntityType="BForModel.Store.t_CarTypeLicenseType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_DriverType" EntityType="BForModel.Store.t_DriverType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_LicenseType" EntityType="BForModel.Store.t_LicenseType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_Locations" EntityType="BForModel.Store.t_Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_Parts" EntityType="BForModel.Store.t_Parts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_TravelRepeat" EntityType="BForModel.Store.t_TravelRepeat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelDone" EntityType="BForModel.Store.TravelDone" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelDoneCars" EntityType="BForModel.Store.TravelDoneCars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelDoneDrivers" EntityType="BForModel.Store.TravelDoneDrivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelDoneLocations" EntityType="BForModel.Store.TravelDoneLocations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelDonePassengers" EntityType="BForModel.Store.TravelDonePassengers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlanned" EntityType="BForModel.Store.TravelPlanned" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlannedCars" EntityType="BForModel.Store.TravelPlannedCars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlannedDrivers" EntityType="BForModel.Store.TravelPlannedDrivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlannedLocations" EntityType="BForModel.Store.TravelPlannedLocations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlannedPassengers" EntityType="BForModel.Store.TravelPlannedPassengers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TravelPlannedTimes" EntityType="BForModel.Store.TravelPlannedTimes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CarBrands_Cars" Association="BForModel.Store.FK_CarBrands_Cars">
+      <End Role="t_CarBrands" EntitySet="t_CarBrands" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cars_ComapyCars" Association="BForModel.Store.FK_Cars_ComapyCars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="ComapyCars" EntitySet="ComapyCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comapies_ComapyCars" Association="BForModel.Store.FK_Comapies_ComapyCars">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="ComapyCars" EntitySet="ComapyCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComapnyPassengers_TravelDonePassengers" Association="BForModel.Store.FK_ComapnyPassengers_TravelDonePassengers">
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+      <End Role="TravelDonePassengers" EntitySet="TravelDonePassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyDrivers" Association="BForModel.Store.FK_Companies_CompanyDrivers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_CompanyPassengers" Association="BForModel.Store.FK_Companies_CompanyPassengers">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCarPlat_TravelDoneCars" Association="BForModel.Store.FK_CompanyCarPlat_TravelDoneCars">
+      <End Role="ComapyCars" EntitySet="ComapyCars" />
+      <End Role="TravelDoneCars" EntitySet="TravelDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCarPlat_TravelPlannedCars" Association="BForModel.Store.FK_CompanyCarPlat_TravelPlannedCars">
+      <End Role="ComapyCars" EntitySet="ComapyCars" />
+      <End Role="TravelPlannedCars" EntitySet="TravelPlannedCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyDrivers_TravelDoneDrivers" Association="BForModel.Store.FK_CompanyDrivers_TravelDoneDrivers">
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+      <End Role="TravelDoneDrivers" EntitySet="TravelDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyDrivers_TravelPlannedDrivers" Association="BForModel.Store.FK_CompanyDrivers_TravelPlannedDrivers">
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+      <End Role="TravelPlannedDrivers" EntitySet="TravelPlannedDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyPassengers_TravelPlannedPassengers" Association="BForModel.Store.FK_CompanyPassengers_TravelPlannedPassengers">
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+      <End Role="TravelPlannedPassengers" EntitySet="TravelPlannedPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_CompanyDrivers" Association="BForModel.Store.FK_Drivers_CompanyDrivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="CompanyDrivers" EntitySet="CompanyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_DriverLicenses" Association="BForModel.Store.FK_Drivers_DriverLicenses">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DriverLicenses" EntitySet="DriverLicenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_DriverTypes" Association="BForModel.Store.FK_Drivers_DriverTypes">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DriverTypes" EntitySet="DriverTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parts_SupplyParts" Association="BForModel.Store.FK_Parts_SupplyParts">
+      <End Role="t_Parts" EntitySet="t_Parts" />
+      <End Role="SupplyParts" EntitySet="SupplyParts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passengers_CompanyPassengers" Association="BForModel.Store.FK_Passengers_CompanyPassengers">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="CompanyPassengers" EntitySet="CompanyPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periods_PeriodTimes" Association="BForModel.Store.FK_Periods_PeriodTimes">
+      <End Role="Periods" EntitySet="Periods" />
+      <End Role="PeriodTimes" EntitySet="PeriodTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periods_TravelPlanned" Association="BForModel.Store.FK_Periods_TravelPlanned">
+      <End Role="Periods" EntitySet="Periods" />
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Suppliers_SupplyParts" Association="BForModel.Store.FK_Suppliers_SupplyParts">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="SupplyParts" EntitySet="SupplyParts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CarType_CarBrands" Association="BForModel.Store.FK_t_CarType_CarBrands">
+      <End Role="t_CarType" EntitySet="t_CarType" />
+      <End Role="t_CarBrands" EntitySet="t_CarBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_CarType_t_CarTypeLicenseType" Association="BForModel.Store.FK_t_CarType_t_CarTypeLicenseType">
+      <End Role="t_CarType" EntitySet="t_CarType" />
+      <End Role="t_CarTypeLicenseType" EntitySet="t_CarTypeLicenseType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_DriverTypes_DriverTypes" Association="BForModel.Store.FK_t_DriverTypes_DriverTypes">
+      <End Role="t_DriverType" EntitySet="t_DriverType" />
+      <End Role="DriverTypes" EntitySet="DriverTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LicenseType_DriverLicenses" Association="BForModel.Store.FK_t_LicenseType_DriverLicenses">
+      <End Role="t_LicenseType" EntitySet="t_LicenseType" />
+      <End Role="DriverLicenses" EntitySet="DriverLicenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LicenseType_t_CarTypeLicenseType" Association="BForModel.Store.FK_t_LicenseType_t_CarTypeLicenseType">
+      <End Role="t_LicenseType" EntitySet="t_LicenseType" />
+      <End Role="t_CarTypeLicenseType" EntitySet="t_CarTypeLicenseType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationDst_TravelDone" Association="BForModel.Store.FK_t_LocationDst_TravelDone">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDone" EntitySet="TravelDone" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationDst_TravelPlanned" Association="BForModel.Store.FK_t_LocationDst_TravelPlanned">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_TravelDoneCars" Association="BForModel.Store.FK_t_LocationFrom_TravelDoneCars">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneCars" EntitySet="TravelDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_TravelDoneDrivers" Association="BForModel.Store.FK_t_LocationFrom_TravelDoneDrivers">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneDrivers" EntitySet="TravelDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_TravelDoneLocations" Association="BForModel.Store.FK_t_LocationFrom_TravelDoneLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneLocations" EntitySet="TravelDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationFrom_TravelPlannedLocations" Association="BForModel.Store.FK_t_LocationFrom_TravelPlannedLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelPlannedLocations" EntitySet="TravelPlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationOrg_TravelDone" Association="BForModel.Store.FK_t_LocationOrg_TravelDone">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDone" EntitySet="TravelDone" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationOrg_TravelPlanned" Association="BForModel.Store.FK_t_LocationOrg_TravelPlanned">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_TravelDoneCars" Association="BForModel.Store.FK_t_LocationTo_TravelDoneCars">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneCars" EntitySet="TravelDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_TravelDoneDrivers" Association="BForModel.Store.FK_t_LocationTo_TravelDoneDrivers">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneDrivers" EntitySet="TravelDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_TravelDoneLocations" Association="BForModel.Store.FK_t_LocationTo_TravelDoneLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelDoneLocations" EntitySet="TravelDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_LocationTo_TravelPlannedLocations" Association="BForModel.Store.FK_t_LocationTo_TravelPlannedLocations">
+      <End Role="t_Locations" EntitySet="t_Locations" />
+      <End Role="TravelPlannedLocations" EntitySet="TravelPlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_TravelRepeat_TravelPlanned" Association="BForModel.Store.FK_t_TravelRepeat_TravelPlanned">
+      <End Role="t_TravelRepeat" EntitySet="t_TravelRepeat" />
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelDone_TravelDoneCars" Association="BForModel.Store.FK_TravelDone_TravelDoneCars">
+      <End Role="TravelDone" EntitySet="TravelDone" />
+      <End Role="TravelDoneCars" EntitySet="TravelDoneCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelDone_TravelDoneDrivers" Association="BForModel.Store.FK_TravelDone_TravelDoneDrivers">
+      <End Role="TravelDone" EntitySet="TravelDone" />
+      <End Role="TravelDoneDrivers" EntitySet="TravelDoneDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelDone_TravelDoneLocations" Association="BForModel.Store.FK_TravelDone_TravelDoneLocations">
+      <End Role="TravelDone" EntitySet="TravelDone" />
+      <End Role="TravelDoneLocations" EntitySet="TravelDoneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelDone_TravelDonePassengers" Association="BForModel.Store.FK_TravelDone_TravelDonePassengers">
+      <End Role="TravelDone" EntitySet="TravelDone" />
+      <End Role="TravelDonePassengers" EntitySet="TravelDonePassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelDone_TravelPlannedTimes" Association="BForModel.Store.FK_TravelDone_TravelPlannedTimes">
+      <End Role="TravelDone" EntitySet="TravelDone" />
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlanned_TravelPlannedCars" Association="BForModel.Store.FK_TravelPlanned_TravelPlannedCars">
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+      <End Role="TravelPlannedCars" EntitySet="TravelPlannedCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlanned_TravelPlannedDrivers" Association="BForModel.Store.FK_TravelPlanned_TravelPlannedDrivers">
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+      <End Role="TravelPlannedDrivers" EntitySet="TravelPlannedDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlanned_TravelPlannedLocations" Association="BForModel.Store.FK_TravelPlanned_TravelPlannedLocations">
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+      <End Role="TravelPlannedLocations" EntitySet="TravelPlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlanned_TravelPlannedPassengers" Association="BForModel.Store.FK_TravelPlanned_TravelPlannedPassengers">
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+      <End Role="TravelPlannedPassengers" EntitySet="TravelPlannedPassengers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlanned_TravelPlannedTimes" Association="BForModel.Store.FK_TravelPlanned_TravelPlannedTimes">
+      <End Role="TravelPlanned" EntitySet="TravelPlanned" />
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlannedTimes_TravelPlannedCars" Association="BForModel.Store.FK_TravelPlannedTimes_TravelPlannedCars">
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+      <End Role="TravelPlannedCars" EntitySet="TravelPlannedCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlannedTimes_TravelPlannedDrivers" Association="BForModel.Store.FK_TravelPlannedTimes_TravelPlannedDrivers">
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+      <End Role="TravelPlannedDrivers" EntitySet="TravelPlannedDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlannedTimes_TravelPlannedLocations" Association="BForModel.Store.FK_TravelPlannedTimes_TravelPlannedLocations">
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+      <End Role="TravelPlannedLocations" EntitySet="TravelPlannedLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TravelPlannedTimes_TravelPlannedPassengers" Association="BForModel.Store.FK_TravelPlannedTimes_TravelPlannedPassengers">
+      <End Role="TravelPlannedTimes" EntitySet="TravelPlannedTimes" />
+      <End Role="TravelPlannedPassengers" EntitySet="TravelPlannedPassengers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="PlateNo" />
+    </Key>
+    <Property Name="PlateNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BrandModelID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComapyCars">
+    <Key>
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="CompanyCarPlatID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CarPlatNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CompanyDrivers">
+    <Key>
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="CompanyDriverID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="DriverID" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CompanyPassengers">
+    <Key>
+      <PropertyRef Name="CompanyPassengerID" />
+    </Key>
+    <Property Name="CompanyPassengerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="PassengerID" Type="nchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DriverLicenses">
+    <Key>
+      <PropertyRef Name="DriverID" />
+      <PropertyRef Name="LicenseTypeID" />
+    </Key>
+    <Property Name="DriverID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LicenseTypeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LicenseTypeDetails" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Drivers">
+    <Key>
+      <PropertyRef Name="DriverID" />
+    </Key>
+    <Property Name="DriverID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="20" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LicenseDetails" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DriverTypes">
+    <Key>
+      <PropertyRef Name="DriverID" />
+      <PropertyRef Name="DriverTypeID" />
+    </Key>
+    <Property Name="DriverID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DriverTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Passengers">
+    <Key>
+      <PropertyRef Name="PassengerID" />
+    </Key>
+    <Property Name="PassengerID" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Periods">
+    <Key>
+      <PropertyRef Name="PeriodID" />
+    </Key>
+    <Property Name="PeriodID" Type="int" Nullable="false" />
+    <Property Name="PeriodDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PeriodTimes">
+    <Key>
+      <PropertyRef Name="PeriodID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="PeriodID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="FromTime" Type="time" Nullable="false" />
+    <Property Name="ToTime" Type="time" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplyID" />
+    </Key>
+    <Property Name="SupplyID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="SupplyParts">
+    <Key>
+      <PropertyRef Name="SupplyID" />
+      <PropertyRef Name="PartID" />
+    </Key>
+    <Property Name="SupplyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PartID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FixingCost" Type="decimal" Nullable="false" />
+    <Property Name="FixingDays" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_CarBrands">
+    <Key>
+      <PropertyRef Name="CarBrandID" />
+    </Key>
+    <Property Name="CarBrandID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CarManufacturer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BrandName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ModelName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CarTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_CarType">
+    <Key>
+      <PropertyRef Name="CarTypeID" />
+    </Key>
+    <Property Name="CarTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PassengersCapacity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_CarTypeLicenseType">
+    <Key>
+      <PropertyRef Name="LicenseTypeID" />
+      <PropertyRef Name="CarTypeID" />
+    </Key>
+    <Property Name="LicenseTypeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="CarTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_DriverType">
+    <Key>
+      <PropertyRef Name="DriverTypeID" />
+    </Key>
+    <Property Name="DriverTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_LicenseType">
+    <Key>
+      <PropertyRef Name="LincenseTypeID" />
+    </Key>
+    <Property Name="LincenseTypeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LocationGpsNDecimalCrdnt" Type="decimal" Nullable="false" Scale="6" />
+    <Property Name="LocationGpsEDecimalCrdnt" Type="decimal" Nullable="false" Scale="6" />
+    <Property Name="LocationDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_Parts">
+    <Key>
+      <PropertyRef Name="PartID" />
+    </Key>
+    <Property Name="PartID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_TravelRepeat">
+    <Key>
+      <PropertyRef Name="TravelRepeatID" />
+    </Key>
+    <Property Name="TravelRepeatID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TravelRepeatDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelDone">
+    <Key>
+      <PropertyRef Name="TravelDoneID" />
+    </Key>
+    <Property Name="TravelDoneID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OriginLocationID" Type="int" Nullable="false" />
+    <Property Name="DestinationLocationID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="FromTime" Type="time" Nullable="false" />
+    <Property Name="ToTime" Type="time" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelDoneCars">
+    <Key>
+      <PropertyRef Name="TravelDoneID" />
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="TravelDoneID" Type="int" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="int" Nullable="false" />
+    <Property Name="FromTime" Type="time" />
+    <Property Name="ToTime" Type="time" />
+    <Property Name="FromLocationID" Type="int" />
+    <Property Name="ToLocationID" Type="int" />
+  </EntityType>
+  <EntityType Name="TravelDoneDrivers">
+    <Key>
+      <PropertyRef Name="TravelDoneID" />
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="TravelDoneID" Type="int" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="int" Nullable="false" />
+    <Property Name="FromTime" Type="time" />
+    <Property Name="ToTime" Type="time" />
+    <Property Name="FromLocationID" Type="int" />
+    <Property Name="ToLocationID" Type="int" />
+  </EntityType>
+  <EntityType Name="TravelDoneLocations">
+    <Key>
+      <PropertyRef Name="TravelDoneLocationsID" />
+    </Key>
+    <Property Name="TravelDoneID" Type="int" Nullable="false" />
+    <Property Name="TravelDoneLocationsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromLocationID" Type="int" Nullable="false" />
+    <Property Name="ToLocationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelDonePassengers">
+    <Key>
+      <PropertyRef Name="TravelDoneID" />
+      <PropertyRef Name="CompanyPassengerID" />
+    </Key>
+    <Property Name="TravelDoneID" Type="int" Nullable="false" />
+    <Property Name="CompanyPassengerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelPlanned">
+    <Key>
+      <PropertyRef Name="TravelPlannedID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OriginLocationID" Type="int" Nullable="false" />
+    <Property Name="DestinationLocationID" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="DriverPreferences" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsTravelRepeat" Type="bit" Nullable="false" />
+    <Property Name="TravelRepeatID" Type="int" />
+    <Property Name="QuantityWithRepeatition" Type="int" />
+    <Property Name="PeriodID" Type="int" />
+  </EntityType>
+  <EntityType Name="TravelPlannedCars">
+    <Key>
+      <PropertyRef Name="TravelPlannedID" />
+      <PropertyRef Name="TravelPlannedTimesID" />
+      <PropertyRef Name="CompanyCarPlatID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedTimesID" Type="int" Nullable="false" />
+    <Property Name="CompanyCarPlatID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelPlannedDrivers">
+    <Key>
+      <PropertyRef Name="TravelPlannedID" />
+      <PropertyRef Name="TravelPlannedTimesID" />
+      <PropertyRef Name="CompanyDriverID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedTimesID" Type="int" Nullable="false" />
+    <Property Name="CompanyDriverID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelPlannedLocations">
+    <Key>
+      <PropertyRef Name="TravelPlannedLocationsID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedTimesID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedLocationsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromLocationID" Type="int" Nullable="false" />
+    <Property Name="ToLocationID" Type="int" Nullable="false" />
+    <Property Name="EstimatedTravelMinutes" Type="int" Nullable="false" />
+    <Property Name="EstimatedTravelCost" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelPlannedPassengers">
+    <Key>
+      <PropertyRef Name="TravelPlannedID" />
+      <PropertyRef Name="TravelPlannedTimesID" />
+      <PropertyRef Name="CompanyPassengerID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedTimesID" Type="int" Nullable="false" />
+    <Property Name="CompanyPassengerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TravelPlannedTimes">
+    <Key>
+      <PropertyRef Name="TravelPlannedTimesID" />
+    </Key>
+    <Property Name="TravelPlannedID" Type="int" Nullable="false" />
+    <Property Name="TravelPlannedTimesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="FromTime" Type="time" Nullable="false" />
+    <Property Name="ToTime" Type="time" Nullable="false" />
+    <Property Name="CostFactor" Type="float" Nullable="false" />
+    <Property Name="IsConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TravelDoneID" Type="int" />
+  </EntityType>
+  <Association Name="FK_CarBrands_Cars">
+    <End Role="t_CarBrands" Type="BForModel.Store.t_CarBrands" Multiplicity="1" />
+    <End Role="Cars" Type="BForModel.Store.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarBrands">
+        <PropertyRef Name="CarBrandID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="BrandModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cars_ComapyCars">
+    <End Role="Cars" Type="BForModel.Store.Cars" Multiplicity="1" />
+    <End Role="ComapyCars" Type="BForModel.Store.ComapyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="PlateNo" />
+      </Principal>
+      <Dependent Role="ComapyCars">
+        <PropertyRef Name="CarPlatNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comapies_ComapyCars">
+    <End Role="Companies" Type="BForModel.Store.Companies" Multiplicity="1" />
+    <End Role="ComapyCars" Type="BForModel.Store.ComapyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="ComapyCars">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComapnyPassengers_TravelDonePassengers">
+    <End Role="CompanyPassengers" Type="BForModel.Store.CompanyPassengers" Multiplicity="1" />
+    <End Role="TravelDonePassengers" Type="BForModel.Store.TravelDonePassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Principal>
+      <Dependent Role="TravelDonePassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyDrivers">
+    <End Role="Companies" Type="BForModel.Store.Companies" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.Store.CompanyDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_CompanyPassengers">
+    <End Role="Companies" Type="BForModel.Store.Companies" Multiplicity="1" />
+    <End Role="CompanyPassengers" Type="BForModel.Store.CompanyPassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCarPlat_TravelDoneCars">
+    <End Role="ComapyCars" Type="BForModel.Store.ComapyCars" Multiplicity="1" />
+    <End Role="TravelDoneCars" Type="BForModel.Store.TravelDoneCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComapyCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="TravelDoneCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCarPlat_TravelPlannedCars">
+    <End Role="ComapyCars" Type="BForModel.Store.ComapyCars" Multiplicity="1" />
+    <End Role="TravelPlannedCars" Type="BForModel.Store.TravelPlannedCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComapyCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Principal>
+      <Dependent Role="TravelPlannedCars">
+        <PropertyRef Name="CompanyCarPlatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyDrivers_TravelDoneDrivers">
+    <End Role="CompanyDrivers" Type="BForModel.Store.CompanyDrivers" Multiplicity="1" />
+    <End Role="TravelDoneDrivers" Type="BForModel.Store.TravelDoneDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="TravelDoneDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyDrivers_TravelPlannedDrivers">
+    <End Role="CompanyDrivers" Type="BForModel.Store.CompanyDrivers" Multiplicity="1" />
+    <End Role="TravelPlannedDrivers" Type="BForModel.Store.TravelPlannedDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Principal>
+      <Dependent Role="TravelPlannedDrivers">
+        <PropertyRef Name="CompanyDriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyPassengers_TravelPlannedPassengers">
+    <End Role="CompanyPassengers" Type="BForModel.Store.CompanyPassengers" Multiplicity="1" />
+    <End Role="TravelPlannedPassengers" Type="BForModel.Store.TravelPlannedPassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Principal>
+      <Dependent Role="TravelPlannedPassengers">
+        <PropertyRef Name="CompanyPassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_CompanyDrivers">
+    <End Role="Drivers" Type="BForModel.Store.Drivers" Multiplicity="1" />
+    <End Role="CompanyDrivers" Type="BForModel.Store.CompanyDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="CompanyDrivers">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_DriverLicenses">
+    <End Role="Drivers" Type="BForModel.Store.Drivers" Multiplicity="1" />
+    <End Role="DriverLicenses" Type="BForModel.Store.DriverLicenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="DriverLicenses">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_DriverTypes">
+    <End Role="Drivers" Type="BForModel.Store.Drivers" Multiplicity="1" />
+    <End Role="DriverTypes" Type="BForModel.Store.DriverTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="DriverTypes">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parts_SupplyParts">
+    <End Role="t_Parts" Type="BForModel.Store.t_Parts" Multiplicity="1" />
+    <End Role="SupplyParts" Type="BForModel.Store.SupplyParts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Parts">
+        <PropertyRef Name="PartID" />
+      </Principal>
+      <Dependent Role="SupplyParts">
+        <PropertyRef Name="PartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passengers_CompanyPassengers">
+    <End Role="Passengers" Type="BForModel.Store.Passengers" Multiplicity="1" />
+    <End Role="CompanyPassengers" Type="BForModel.Store.CompanyPassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerID" />
+      </Principal>
+      <Dependent Role="CompanyPassengers">
+        <PropertyRef Name="PassengerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Periods_PeriodTimes">
+    <End Role="Periods" Type="BForModel.Store.Periods" Multiplicity="1" />
+    <End Role="PeriodTimes" Type="BForModel.Store.PeriodTimes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periods">
+        <PropertyRef Name="PeriodID" />
+      </Principal>
+      <Dependent Role="PeriodTimes">
+        <PropertyRef Name="PeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Periods_TravelPlanned">
+    <End Role="Periods" Type="BForModel.Store.Periods" Multiplicity="0..1" />
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periods">
+        <PropertyRef Name="PeriodID" />
+      </Principal>
+      <Dependent Role="TravelPlanned">
+        <PropertyRef Name="PeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Suppliers_SupplyParts">
+    <End Role="Suppliers" Type="BForModel.Store.Suppliers" Multiplicity="1" />
+    <End Role="SupplyParts" Type="BForModel.Store.SupplyParts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplyID" />
+      </Principal>
+      <Dependent Role="SupplyParts">
+        <PropertyRef Name="SupplyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CarType_CarBrands">
+    <End Role="t_CarType" Type="BForModel.Store.t_CarType" Multiplicity="1" />
+    <End Role="t_CarBrands" Type="BForModel.Store.t_CarBrands" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarType">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="t_CarBrands">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_CarType_t_CarTypeLicenseType">
+    <End Role="t_CarType" Type="BForModel.Store.t_CarType" Multiplicity="1" />
+    <End Role="t_CarTypeLicenseType" Type="BForModel.Store.t_CarTypeLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_CarType">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="t_CarTypeLicenseType">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_DriverTypes_DriverTypes">
+    <End Role="t_DriverType" Type="BForModel.Store.t_DriverType" Multiplicity="1" />
+    <End Role="DriverTypes" Type="BForModel.Store.DriverTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_DriverType">
+        <PropertyRef Name="DriverTypeID" />
+      </Principal>
+      <Dependent Role="DriverTypes">
+        <PropertyRef Name="DriverTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LicenseType_DriverLicenses">
+    <End Role="t_LicenseType" Type="BForModel.Store.t_LicenseType" Multiplicity="1" />
+    <End Role="DriverLicenses" Type="BForModel.Store.DriverLicenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_LicenseType">
+        <PropertyRef Name="LincenseTypeID" />
+      </Principal>
+      <Dependent Role="DriverLicenses">
+        <PropertyRef Name="LicenseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LicenseType_t_CarTypeLicenseType">
+    <End Role="t_LicenseType" Type="BForModel.Store.t_LicenseType" Multiplicity="1" />
+    <End Role="t_CarTypeLicenseType" Type="BForModel.Store.t_CarTypeLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_LicenseType">
+        <PropertyRef Name="LincenseTypeID" />
+      </Principal>
+      <Dependent Role="t_CarTypeLicenseType">
+        <PropertyRef Name="LicenseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationDst_TravelDone">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDone">
+        <PropertyRef Name="DestinationLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationDst_TravelPlanned">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelPlanned">
+        <PropertyRef Name="DestinationLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_TravelDoneCars">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="0..1" />
+    <End Role="TravelDoneCars" Type="BForModel.Store.TravelDoneCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneCars">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_TravelDoneDrivers">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="0..1" />
+    <End Role="TravelDoneDrivers" Type="BForModel.Store.TravelDoneDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneDrivers">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_TravelDoneLocations">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelDoneLocations" Type="BForModel.Store.TravelDoneLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneLocations">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationFrom_TravelPlannedLocations">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelPlannedLocations" Type="BForModel.Store.TravelPlannedLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelPlannedLocations">
+        <PropertyRef Name="FromLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationOrg_TravelDone">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDone">
+        <PropertyRef Name="OriginLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationOrg_TravelPlanned">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelPlanned">
+        <PropertyRef Name="OriginLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_TravelDoneCars">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="0..1" />
+    <End Role="TravelDoneCars" Type="BForModel.Store.TravelDoneCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneCars">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_TravelDoneDrivers">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="0..1" />
+    <End Role="TravelDoneDrivers" Type="BForModel.Store.TravelDoneDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneDrivers">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_TravelDoneLocations">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelDoneLocations" Type="BForModel.Store.TravelDoneLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelDoneLocations">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_LocationTo_TravelPlannedLocations">
+    <End Role="t_Locations" Type="BForModel.Store.t_Locations" Multiplicity="1" />
+    <End Role="TravelPlannedLocations" Type="BForModel.Store.TravelPlannedLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="TravelPlannedLocations">
+        <PropertyRef Name="ToLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_TravelRepeat_TravelPlanned">
+    <End Role="t_TravelRepeat" Type="BForModel.Store.t_TravelRepeat" Multiplicity="0..1" />
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_TravelRepeat">
+        <PropertyRef Name="TravelRepeatID" />
+      </Principal>
+      <Dependent Role="TravelPlanned">
+        <PropertyRef Name="TravelRepeatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelDone_TravelDoneCars">
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="1" />
+    <End Role="TravelDoneCars" Type="BForModel.Store.TravelDoneCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelDone">
+        <PropertyRef Name="TravelDoneID" />
+      </Principal>
+      <Dependent Role="TravelDoneCars">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelDone_TravelDoneDrivers">
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="1" />
+    <End Role="TravelDoneDrivers" Type="BForModel.Store.TravelDoneDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelDone">
+        <PropertyRef Name="TravelDoneID" />
+      </Principal>
+      <Dependent Role="TravelDoneDrivers">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelDone_TravelDoneLocations">
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="1" />
+    <End Role="TravelDoneLocations" Type="BForModel.Store.TravelDoneLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelDone">
+        <PropertyRef Name="TravelDoneID" />
+      </Principal>
+      <Dependent Role="TravelDoneLocations">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelDone_TravelDonePassengers">
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="1" />
+    <End Role="TravelDonePassengers" Type="BForModel.Store.TravelDonePassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelDone">
+        <PropertyRef Name="TravelDoneID" />
+      </Principal>
+      <Dependent Role="TravelDonePassengers">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelDone_TravelPlannedTimes">
+    <End Role="TravelDone" Type="BForModel.Store.TravelDone" Multiplicity="0..1" />
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelDone">
+        <PropertyRef Name="TravelDoneID" />
+      </Principal>
+      <Dependent Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlanned_TravelPlannedCars">
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="1" />
+    <End Role="TravelPlannedCars" Type="BForModel.Store.TravelPlannedCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlanned">
+        <PropertyRef Name="TravelPlannedID" />
+      </Principal>
+      <Dependent Role="TravelPlannedCars">
+        <PropertyRef Name="TravelPlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlanned_TravelPlannedDrivers">
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="1" />
+    <End Role="TravelPlannedDrivers" Type="BForModel.Store.TravelPlannedDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlanned">
+        <PropertyRef Name="TravelPlannedID" />
+      </Principal>
+      <Dependent Role="TravelPlannedDrivers">
+        <PropertyRef Name="TravelPlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlanned_TravelPlannedLocations">
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="1" />
+    <End Role="TravelPlannedLocations" Type="BForModel.Store.TravelPlannedLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlanned">
+        <PropertyRef Name="TravelPlannedID" />
+      </Principal>
+      <Dependent Role="TravelPlannedLocations">
+        <PropertyRef Name="TravelPlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlanned_TravelPlannedPassengers">
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="1" />
+    <End Role="TravelPlannedPassengers" Type="BForModel.Store.TravelPlannedPassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlanned">
+        <PropertyRef Name="TravelPlannedID" />
+      </Principal>
+      <Dependent Role="TravelPlannedPassengers">
+        <PropertyRef Name="TravelPlannedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlanned_TravelPlannedTimes">
+    <End Role="TravelPlanned" Type="BForModel.Store.TravelPlanned" Multiplicity="0..1" />
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlanned">
+        <PropertyRef Name="TravelPlannedID" />
+      </Principal>
+      <Dependent Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelDoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlannedTimes_TravelPlannedCars">
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="1" />
+    <End Role="TravelPlannedCars" Type="BForModel.Store.TravelPlannedCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Principal>
+      <Dependent Role="TravelPlannedCars">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlannedTimes_TravelPlannedDrivers">
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="1" />
+    <End Role="TravelPlannedDrivers" Type="BForModel.Store.TravelPlannedDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Principal>
+      <Dependent Role="TravelPlannedDrivers">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlannedTimes_TravelPlannedLocations">
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="1" />
+    <End Role="TravelPlannedLocations" Type="BForModel.Store.TravelPlannedLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Principal>
+      <Dependent Role="TravelPlannedLocations">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TravelPlannedTimes_TravelPlannedPassengers">
+    <End Role="TravelPlannedTimes" Type="BForModel.Store.TravelPlannedTimes" Multiplicity="1" />
+    <End Role="TravelPlannedPassengers" Type="BForModel.Store.TravelPlannedPassengers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TravelPlannedTimes">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Principal>
+      <Dependent Role="TravelPlannedPassengers">
+        <PropertyRef Name="TravelPlannedTimesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

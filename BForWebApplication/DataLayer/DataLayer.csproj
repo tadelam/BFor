@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23F8D45E-8332-4F44-9821-C103D288B835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataLayer</RootNamespace>
+    <AssemblyName>DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BForModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BForModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BForModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BForModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BForModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Car.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Company.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyCar.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyCustomer.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyCustomerContact.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyCustomerGroup.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyDriver.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPart.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPassenger.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPassengerGroup.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPeriodTime.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyServicePrice.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySupplier.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySupplierContact.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySupplierGroup.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyTechnician.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyUser.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DriverLicens.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Period.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodTime.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RideDone.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDoneCar.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDoneCarLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDoneDriver.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDoneDriverLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDoneLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDonePassengerCompany.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RideDonePassengerLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlanned.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedCar.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedCarLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedDriver.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedDriverLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedObjectPrice.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedPassengerCompany.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedPassengerLocation.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RidePlannedTime.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Technician.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_CarBrands.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_CarGroups.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_CarType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_CompanyType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_ContactType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_CustomerGroups.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_DriverGroups.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_DriverType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_EntityType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Items.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Languages.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_LicenseType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Locations.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_NotifyBy.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_NotifyByTiming.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_NotifyType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Parts.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_PassengerGroups.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_RideObjects.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_RideType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Roles.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_Services.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_SupplierGroups.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserContactType.cs">
+      <DependentUpon>BForModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="BForModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BForModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BForModel.edmx.diagram">
+      <DependentUpon>BForModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BForModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BForModel.edmx</DependentUpon>
+      <LastGenOutput>BForModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BForModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BForModel.edmx</DependentUpon>
+      <LastGenOutput>BForModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

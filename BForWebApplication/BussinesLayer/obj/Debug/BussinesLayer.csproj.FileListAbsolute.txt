@@ -1,0 +1,9 @@
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\obj\Debug\BussinesLayer.csprojResolveAssemblyReference.cache
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\BussinesLayer.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\BussinesLayer.pdb
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\obj\Debug\BussinesLayer.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\obj\Debug\BussinesLayer.pdb
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\DataLayer.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\EntityFramework.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\DataLayer.pdb
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\BussinesLayer\bin\Debug\EntityFramework.xml

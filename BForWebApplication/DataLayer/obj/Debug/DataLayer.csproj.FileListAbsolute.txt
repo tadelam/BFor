@@ -1,0 +1,7 @@
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\bin\Debug\DataLayer.dll.config
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\bin\Debug\DataLayer.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\bin\Debug\DataLayer.pdb
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\bin\Debug\EntityFramework.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\bin\Debug\EntityFramework.xml
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\obj\Debug\DataLayer.dll
+c:\Users\michaelt\Documents\Visual Studio 2012\Projects\BForWebApplication\DataLayer\obj\Debug\DataLayer.pdb
